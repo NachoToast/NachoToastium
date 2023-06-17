@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <RecipeDef Name="NachoToastium_BrandBase" Abstract="True">
+        <workerClass>NachoToastium.Recipe_BrandBase</workerClass>
+        <anesthetize>false</anesthetize>
+        <hideBodyPartNames>true</hideBodyPartNames>
+        <workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+        <workSkill>Medicine</workSkill>
+        <workSkillLearnFactor>1</workSkillLearnFactor>
+        <recipeUsers>
+            <li>Human</li>
+        </recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Dye</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<skillRequirements>
+			<Artistic>2</Artistic>
+		</skillRequirements>
+    </RecipeDef>
+
+    <RecipeDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="NachoToastium_BrandBase">
+        <defName>NachoToast_Brand</defName>
+        <label>brand with sigil</label>
+        <description>Brand with the sigil of the Empire.</description>
+        <workAmount>800</workAmount>
+        <jobString>Branding sigil.</jobString>
+        <addsHediff>NachoToastium_Branded</addsHediff>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+        </fixedIngredientFilter>
+        <researchPrerequisites>
+            <li>NachoToastium_Branding</li>    
+        </researchPrerequisites>
+    </RecipeDef>
+
+    <RecipeDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="NachoToastium_BrandBase">
+        <defName>NachoToast_Engrave</defName>
+        <label>Engrave emblem</label>
+        <description>Engrave with the emblem of the Empire.</description>
+        <workAmount>1600</workAmount>
+        <jobString>Engraving emblem.</jobString>
+        <addsHediff>NachoToastium_Engraved</addsHediff>
+        <skillRequirements>
+            <Medicine>6</Medicine>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+        </fixedIngredientFilter>
+        <researchPrerequisites>
+            <li>NachoToastium_Engraving</li>    
+        </researchPrerequisites>
+    </RecipeDef>
+
+    <RecipeDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="NachoToastium_BrandBase">
+        <defName>NachoToast_EngraveElectric</defName>
+        <label>Electrically engrave emblem</label>
+        <description>Engrave with the emblem of the Empire, assisted by electricity for higher levels of precision and detail.</description>
+        <workAmount>3200</workAmount>
+        <jobString>Electrically engraving emblem.</jobString>
+        <addsHediff>NachoToastium_EngravedElectric</addsHediff>
+        <skillRequirements>
+            <Medicine>8</Medicine>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Medicine</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>Medicine</li>
+            </categories>
+            <disallowedThingDefs>
+                <li>MedicineHerbal</li>
+            </disallowedThingDefs>
+        </fixedIngredientFilter>
+        <researchPrerequisites>
+            <li>NachoToastium_Electrocautery</li>    
+        </researchPrerequisites>
+    </RecipeDef>
+
+</Defs>
