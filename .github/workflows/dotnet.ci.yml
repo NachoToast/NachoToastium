@@ -5,10 +5,6 @@ name: .NET CI
 
 on: [push, pull_request]
 
-defaults:
-    run:
-        working-directory: source/NachoToastium
-
 jobs:
     build:
         runs-on: ubuntu-latest
@@ -20,8 +16,8 @@ jobs:
               with:
                   dotnet-version: 6.0.x
             - name: Restore dependencies
-              run: dotnet restore
+              run: dotnet restore Source/NachoToastium/NachoToastium.sln
             - name: Build
-              run: dotnet build --no-restore
+              run: dotnet build Source/NachoToastium/NachoToastium.sln --no-restore
             - name: Test
-              run: dotnet test --no-build --verbosity normal
+              run: dotnet test Source/NachoToastium/NachoToastium.sln --no-build --verbosity normal
