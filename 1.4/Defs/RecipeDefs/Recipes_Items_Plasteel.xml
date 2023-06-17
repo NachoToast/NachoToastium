@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <RecipeDef>
+        <defName>NachoToastium_PlasteelCuring</defName>
+        <label>make plasteel from steel and chemfuel</label>
+        <description>Make a batch of plasteel by curing and steel inside vats of chemfuel.</description>
+        <jobString>Curing steel.</jobString>
+        <effectWorking>Cremate</effectWorking>
+        <soundWorking>Recipe_Cremate</soundWorking>
+        <workAmount>2500</workAmount>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+        </ingredients>
+        <products>
+            <Plasteel>15</Plasteel>
+        </products>
+        <researchPrerequisites>
+            <li>NachoToastium_PlasteelCuring</li>
+        </researchPrerequisites>
+        <recipeUsers>
+            <li>BiofuelRefinery</li>
+        </recipeUsers>
+    </RecipeDef>
+
+</Defs>
