@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <RecipeDef>
+        <defName>NachoToastium_MakeAntigrainWarhead</defName>
+        <label>make antigrain warhead</label>
+        <description>Make an antigrain warhead.</description>
+        <jobString>Making high-explosive shell.</jobString>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <workAmount>1600</workAmount>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <targetCountAdjustment>4</targetCountAdjustment>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>15</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Uranium</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentSpacer</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <products>
+            <Shell_AntigrainWarhead>1</Shell_AntigrainWarhead>
+        </products>
+        <researchPrerequisites>
+            <li>NachoToastium_ExplosivesManufacturing</li>
+        </researchPrerequisites>
+        <recipeUsers>
+            <li>TableMachining</li>
+        </recipeUsers>
+        <skillRequirements>
+            <Crafting>8</Crafting>
+        </skillRequirements>
+        <displayPriority>120</displayPriority>
+    </RecipeDef>
+
+</Defs>
