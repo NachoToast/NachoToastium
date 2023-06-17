@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <ThingDef ParentName="ArmorHelmetMakeableBase">
+    <ThingDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="ArmorHelmetMakeableBase">
         <defName>NachoToastium_AdvancedGunlink</defName>
         <label>advanced gunlink</label>
         <description>A advanced targeting computer that helps the user aim. This one is an upgraded model of the original gunlink.</description>
