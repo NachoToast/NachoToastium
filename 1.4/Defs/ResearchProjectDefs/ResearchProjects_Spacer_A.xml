@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ResearchProjectDef Abstract="True" Name="NachoToastium_Base_Spacer_A">
+        <techLevel>Spacer</techLevel>
+        <tab>NachoToastium</tab>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <prerequisites>
+            <li>MicroelectronicsBasics</li>
+        </prerequisites>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="NachoToastium_Base_Spacer_A">
+        <defName>NachoToastium_NeutroamineSynthesis</defName>
+        <label>Neutroamine synthesis</label>
+        <description>Synthesize neutroamine by combining herbal medicine and psychoid leaves.</description>
+        <baseCost>1500</baseCost>
+        <prerequisites>
+            <li>MedicineProduction</li>
+        </prerequisites>
+        <researchViewX>1.00</researchViewX>
+        <researchViewY>1.00</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="NachoToastium_Base_Spacer_A">
+        <defName>NachoToastium_SynthreadWeaving</defName>
+        <label>Synthread weaving</label>
+        <description>Create synthread by interweaving plasteel and cloth.</description>
+        <baseCost>1500</baseCost>
+        <prerequisites>
+            <li>ComplexClothing</li>
+        </prerequisites>
+        <researchViewX>1.00</researchViewX>
+        <researchViewY>3.50</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="NachoToastium_Base_Spacer_A">
+        <defName>NachoToastium_Engraving</defName>
+        <label>Engraving</label>
+        <description>Engrave intricate patterns and emblems onto pawns, further increasing their royal favour value.</description>
+        <baseCost>900</baseCost>
+        <prerequisites>
+            <li>NachoToastium_Branding</li>
+        </prerequisites>
+        <researchViewX>1.00</researchViewX>
+        <researchViewY>5.00</researchViewY>
+    </ResearchProjectDef>
+
+</Defs>
