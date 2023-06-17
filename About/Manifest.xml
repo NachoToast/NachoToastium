@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <Manifest>
-    <identifier>NachoToastium</identifier>
+    <identifier>net.nachotoast.rimworld.mod.nachotoastium</identifier>
     <version>0.1</version>
     <manifestUri>https://raw.githubusercontent.com/NachoToast/NachoToastium/main/About/Manifest.xml</manifestUri>
     <downloadUri>https://github.com/NachoToast/NachoToastium/releases/latest</downloadUri>
