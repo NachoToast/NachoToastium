@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <HediffDef>
+        <defName>NachoToastium_Branded</defName>
+        <label>branded</label>
+        <labelNoun>the brand of the Empire</labelNoun>
+        <description>An imprintation of the Empire's sigil onto the skin. Slightly painful.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <initialSeverity>0.001</initialSeverity>
+        <defaultLabelColor>(1.00, 0.50, 0.00)</defaultLabelColor>
+        <maxSeverity>1.0</maxSeverity>
+        <stages>
+            <li>
+                <label>fresh</label>
+                <painOffset>0.50</painOffset>
+                <statOffsets>
+                    <RoyalFavorValue>1</RoyalFavorValue>
+                </statOffsets>
+            </li>
+            <li>
+                <minSeverity>0.2</minSeverity>
+                <painOffset>0.05</painOffset>
+                <statOffsets>
+                    <RoyalFavorValue>1</RoyalFavorValue>
+                </statOffsets>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>1.0</severityPerDay>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>NachoToastium_Engraved</defName>
+        <label>engraved</label>
+        <labelNoun>an engraving of the Empire's emblem</labelNoun>
+        <description>An emblem of the Empire, intricately engraved onto the skin.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <initialSeverity>0.001</initialSeverity>
+        <defaultLabelColor>(1.00, 0.50, 0.50)</defaultLabelColor>
+        <maxSeverity>1.0</maxSeverity>
+        <stages>
+            <li>
+                <label>fresh</label>
+                <painOffset>0.35</painOffset>
+                <statOffsets>
+                    <RoyalFavorValue>3</RoyalFavorValue>
+                </statOffsets>
+            </li>
+            <li>
+                <minSeverity>0.4</minSeverity>
+                <painOffset>0.02</painOffset>
+                <statOffsets>
+                    <RoyalFavorValue>3</RoyalFavorValue>
+                </statOffsets>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>1.0</severityPerDay>
+            </li>
+        </comps>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>NachoToastium_EngravedElectric</defName>
+        <label>electrically engraved</label>
+        <labelNoun>an electrical engraving of the Empire's emblem</labelNoun>
+        <description>An emblem of the Empire, electrically engraved onto the skin with an impossible level of detail and precision.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <initialSeverity>0.001</initialSeverity>
+        <defaultLabelColor>(1.00, 0.50, 1.00)</defaultLabelColor>
+        <maxSeverity>1.0</maxSeverity>
+        <stages>
+            <li>
+                <label>fresh</label>
+                <painOffset>0.40</painOffset>
+                <statOffsets>
+                    <RoyalFavorValue>6</RoyalFavorValue>
+                </statOffsets>
+            </li>
+            <li>
+                <minSeverity>0.2</minSeverity>
+                <statOffsets>
+                    <RoyalFavorValue>6</RoyalFavorValue>
+                </statOffsets>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>1.0</severityPerDay>
+            </li>
+        </comps>
+    </HediffDef>
+
+</Defs>
