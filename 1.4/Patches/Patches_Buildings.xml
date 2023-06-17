@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+        <value>
+            <li>NachoToastium_NanoAnalyzer</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="PsychicEmanator"]/costList</xpath>
+        <value>
+            <costList>
+                <Uranium>10</Uranium>
+                <TechprofSubpersonaCore>1</TechprofSubpersonaCore>
+                <Gold>5</Gold>
+            </costList>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="PsychicEmanator"]</xpath>
+        <value>
+            <designationCategory>Misc</designationCategory>
+            <researchPrerequisites>
+                <li>NachoToastium_PsychicStudy</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="PsychicEmanator"]/uiIconScale</xpath>
+        <value>
+            <uiIconScale>0.65</uiIconScale>
+        </value>
+    </Operation>
+    
+</Patch>
