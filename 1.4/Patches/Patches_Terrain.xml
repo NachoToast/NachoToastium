@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/TerrainDef[@Name="WaterDeepBase"]/changeable</xpath>
+        <value>
+            <changeable>true</changeable>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TerrainDef[defName="WaterShallow"]</xpath>
+        <value>
+            <description>A dug out hole filled with water from a nearby source. Slow to construct.</description>
+            <constructEffect>ConstructDirt</constructEffect>
+            <designationCategory>Floors</designationCategory>
+            <designatorDropdown>NachoToastium_TerraformShallow</designatorDropdown>
+            <statBases>
+                <WorkToBuild>3000</WorkToBuild>
+            </statBases>
+            <researchPrerequisites>
+                <li>NachoToastium_Terraforming</li>
+            </researchPrerequisites>
+            <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+        </value>
+    </Operation>
+    
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TerrainDef[defName="WaterOceanShallow"]</xpath>
+        <value>
+            <description>A dug out hole filled with water from a nearby ocean. Slow to construct.</description>
+            <constructEffect>ConstructDirt</constructEffect>
+            <designationCategory>Floors</designationCategory>
+            <designatorDropdown>NachoToastium_TerraformShallow</designatorDropdown>
+            <statBases>
+                <WorkToBuild>3000</WorkToBuild>
+            </statBases>
+            <researchPrerequisites>
+                <li>NachoToastium_Terraforming</li>
+            </researchPrerequisites>
+            <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TerrainDef[defName="WaterDeep"]</xpath>
+        <value>
+            <description>A deeply dug out hole filled with water from a nearby source. Slow to construct.</description>
+            <constructEffect>ConstructDirt</constructEffect>
+            <designationCategory>Floors</designationCategory>
+            <designatorDropdown>NachoToastium_TerraformDeep</designatorDropdown>
+            <statBases>
+                <WorkToBuild>4000</WorkToBuild>
+            </statBases>
+            <researchPrerequisites>
+                <li>NachoToastium_Excavation</li>
+            </researchPrerequisites>
+            <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/TerrainDef[defName="WaterOceanDeep"]</xpath>
+        <value>
+            <description>A deeply dug out hole filled with water from a nearby ocean. Slow to construct.</description>
+            <constructEffect>ConstructDirt</constructEffect>
+            <designationCategory>Floors</designationCategory>
+            <designatorDropdown>NachoToastium_TerraformDeep</designatorDropdown>
+            <statBases>
+                <WorkToBuild>4000</WorkToBuild>
+            </statBases>
+            <researchPrerequisites>
+                <li>NachoToastium_Excavation</li>
+            </researchPrerequisites>
+            <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+        </value>
+    </Operation>
+
+
+</Patch>

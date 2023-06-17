@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <DesignatorDropdownGroupDef>
+        <defName>NachoToastium_TerraformShallow</defName>
+        <label>shallow water</label>
+    </DesignatorDropdownGroupDef>
+
+    <DesignatorDropdownGroupDef>
+        <defName>NachoToastium_TerraformDeep</defName>
+        <label>deep water</label>
+    </DesignatorDropdownGroupDef>
+
+</Defs>
