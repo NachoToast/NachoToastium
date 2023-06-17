@@ -40,7 +40,7 @@
         <spawnThingOnRemoved>NachoToastium_AdvancedDrillArm</spawnThingOnRemoved>
     </HediffDef>
 
-    <ThingDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="BodyPartProstheticBase">
+    <ThingDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="BodyPartBionicBase">
         <defName>NachoToastium_AdvancedDrillArm</defName>
         <label>advanced drill arm</label>
         <description>An advanced mechanical arm replacement to drastically speed up mining and deep drilling speed. This one is an upgraded model of the original drill arm.</description>
@@ -54,24 +54,19 @@
             <ComponentSpacer>8</ComponentSpacer>
         </costList>
         <recipeMaker>
-            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-            <workSkill>Crafting</workSkill>
-            <effectWorking>Smith</effectWorking>
-            <soundWorking>Recipe_Smith</soundWorking>
-            <recipeUsers>
+            <recipeUsers Inherit="False">
                 <li>TableMachining</li>
             </recipeUsers>
             <skillRequirements>
                 <Crafting>10</Crafting>
             </skillRequirements>
-            <unfinishedThingDef>UnfinishedHealthItemProsthetic</unfinishedThingDef>
-            <researchPrerequisites>
+            <researchPrerequisites Inherit="False">
                 <li>NachoToastium_AdvancedDrillArm</li>
             </researchPrerequisites>
         </recipeMaker>
     </ThingDef>
 
-    <RecipeDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="SurgeryInstallBodyPartProstheticBase">
+    <RecipeDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="SurgeryInstallBodyPartArtificialBase">
         <defName>NachoToastium_InstallAdvancedDrillArm</defName>
         <label>install advanced drill arm</label>
         <description>Install an advanced drill arm</description>
@@ -96,7 +91,7 @@
             </thingDefs>
         </fixedIngredientFilter>
         <appliedOnFixedBodyParts>
-            <li>Hand</li>
+            <li>Arm</li>
         </appliedOnFixedBodyParts>
         <addsHediff>NachoToastium_AdvancedDrillArm</addsHediff>
     </RecipeDef>
