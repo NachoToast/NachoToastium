@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <RecipeDef Name="NachoToastium_MakeSerumBase" Abstract="True">
+        <jobString>Making mech serum.</jobString>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_CookMeal</soundWorking>
+        <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+        <workSkill>Intellectual</workSkill>
+        <researchPrerequisites>
+            <li>NachoToastium_SerumEngineering</li>
+        </researchPrerequisites>
+        <recipeUsers>
+            <li>DrugLab</li>
+        </recipeUsers>
+        <skillRequirements>
+            <Crafting>12</Crafting>
+            <Intellectual>12</Intellectual>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentSpacer</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Neutroamine</li>
+                    </thingDefs>
+                </filter>
+                <count>12</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Uranium</li>
+                    </thingDefs>
+                </filter>
+                <count>30</count>
+            </li>
+        </ingredients>
+        <unfinishedThingDef>NachoToastium_UnfinishedMechSerum</unfinishedThingDef>
+    </RecipeDef>
+
+    <RecipeDef ParentName="NachoToastium_MakeSerumBase">
+        <defName>NachoToastium_MakeHealerMechSerum</defName>
+        <label>make healer mech serum</label>
+        <description>Make a healer mech serum.</description>
+        <workAmount>10000</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>MedicineUltratech</li>
+                    </thingDefs>
+                </filter>
+                <count>8</count>
+            </li>
+        </ingredients>
+        <products>
+            <MechSerumHealer>1</MechSerumHealer>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="NachoToastium_MakeSerumBase">
+        <defName>NachoToastium_MakeResurrectorMechSerum</defName>
+        <label>make resurrector mech serum</label>
+        <description>Make a resurrector mech serum.</description>
+        <workAmount>12000</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>MedicineUltratech</li>
+                    </thingDefs>
+                </filter>
+                <count>12</count>
+            </li>
+        </ingredients>
+        <products>
+            <MechSerumResurrector>1</MechSerumResurrector>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef Name="NachoToastium_MakeSerumNeurotrainerBase" ParentName="NachoToastium_MakeSerumBase" Abstract="True">
+        <description>Make a neurotrainer mech serum.</description>
+        <workAmount>6000</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>MedicineUltratech</li>
+                    </thingDefs>
+                </filter>
+                <count>4</count>
+            </li>
+        </ingredients>
+    </RecipeDef>
+
+    <RecipeDef ParentName="NachoToastium_MakeSerumNeurotrainerBase">
+        <defName>NachoToastium_MakeNeurotrainerMechSerum_Animals</defName>
+        <label>make skilltrainer (animals)</label>
+        <products>
+            <Neurotrainer_Animals>1</Neurotrainer_Animals>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="NachoToastium_MakeSerumNeurotrainerBase">
+        <defName>NachoToastium_MakeNeurotrainerMechSerum_Artistic</defName>
+        <label>make skilltrainer (artistic)</label>
+        <products>
+            <Neurotrainer_Artistic>1</Neurotrainer_Artistic>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="NachoToastium_MakeSerumNeurotrainerBase">
+        <defName>NachoToastium_MakeNeurotrainerMechSerum_Construction</defName>
+        <label>make skilltrainer (construction)</label>
+        <products>
+            <Neurotrainer_Construction>1</Neurotrainer_Construction>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="NachoToastium_MakeSerumNeurotrainerBase">
+        <defName>NachoToastium_MakeNeurotrainerMechSerum_Cooking</defName>
+        <label>make skilltrainer (cooking)</label>
+        <products>
+            <Neurotrainer_Cooking>1</Neurotrainer_Cooking>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="NachoToastium_MakeSerumNeurotrainerBase">
+        <defName>NachoToastium_MakeNeurotrainerMechSerum_Crafting</defName>
+        <label>make skilltrainer (crafting)</label>
+        <products>
+            <Neurotrainer_Crafting>1</Neurotrainer_Crafting>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="NachoToastium_MakeSerumNeurotrainerBase">
+        <defName>NachoToastium_MakeNeurotrainerMechSerum_Intellectual</defName>
+        <label>make skilltrainer (intellectual)</label>
+        <products>
+            <Neurotrainer_Intellectual>1</Neurotrainer_Intellectual>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="NachoToastium_MakeSerumNeurotrainerBase">
+        <defName>NachoToastium_MakeNeurotrainerMechSerum_Medicine</defName>
+        <label>make skilltrainer (medicine)</label>
+        <products>
+            <Neurotrainer_Medicine>1</Neurotrainer_Medicine>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="NachoToastium_MakeSerumNeurotrainerBase">
+        <defName>NachoToastium_MakeNeurotrainerMechSerum_Melee</defName>
+        <label>make skilltrainer (melee)</label>
+        <products>
+            <Neurotrainer_Melee>1</Neurotrainer_Melee>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="NachoToastium_MakeSerumNeurotrainerBase">
+        <defName>NachoToastium_MakeNeurotrainerMechSerum_Mining</defName>
+        <label>make skilltrainer (mining)</label>
+        <products>
+            <Neurotrainer_Mining>1</Neurotrainer_Mining>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="NachoToastium_MakeSerumNeurotrainerBase">
+        <defName>NachoToastium_MakeNeurotrainerMechSerum_Plants</defName>
+        <label>make skilltrainer (plants)</label>
+        <products>
+            <Neurotrainer_Plants>1</Neurotrainer_Plants>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="NachoToastium_MakeSerumNeurotrainerBase">
+        <defName>NachoToastium_MakeNeurotrainerMechSerum_Shooting</defName>
+        <label>make skilltrainer (shooting)</label>
+        <products>
+            <Neurotrainer_Shooting>1</Neurotrainer_Shooting>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="NachoToastium_MakeSerumNeurotrainerBase">
+        <defName>NachoToastium_MakeNeurotrainerMechSerum_Social</defName>
+        <label>make skilltrainer (social)</label>
+        <products>
+            <Neurotrainer_Social>1</Neurotrainer_Social>
+        </products>
+    </RecipeDef>
+
+</Defs>
