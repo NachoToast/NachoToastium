@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <RecipeDef Name="NachoToastium_HexmeshRecipeBase" Abstract="True">
+        <jobString>Fabricating hexmesh.</jobString>
+        <description>Fabricate hexmesh from hyperweave and plasteel.</description>
+        <effectWorking>Tailor</effectWorking>
+        <soundWorking>Recipe_Tailor</soundWorking>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <recipeUsers>
+            <li>ElectricTailoringBench</li>
+        </recipeUsers>
+        <skillRequirements>
+            <Crafting>12</Crafting>
+        </skillRequirements>
+    </RecipeDef>
+
+    <RecipeDef ParentName="NachoToastium_HexmeshRecipeBase">
+        <defName>NachoToastium_MakeHexmesh</defName>
+        <label>make hexmesh</label>
+        <workAmount>1500</workAmount>
+        <researchPrerequisites>
+            <li>NachoToastium_HexmeshFabrication</li>
+        </researchPrerequisites>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Hyperweave</li>
+                    </thingDefs>
+                </filter>
+                <count>50</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+        <products>
+            <NachoToastium_Hexmesh>25</NachoToastium_Hexmesh>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="NachoToastium_HexmeshRecipeBase">
+        <defName>NachoToastium_MakeHexmeshOptimized</defName>
+        <label>make hexmesh (optimized)</label>
+        <workAmount>1500</workAmount>
+        <researchPrerequisites>
+            <li>NachoToastium_HexmeshAssembly</li>
+        </researchPrerequisites>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Hyperweave</li>
+                    </thingDefs>
+                </filter>
+                <count>50</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+        </ingredients>
+        <products>
+            <NachoToastium_Hexmesh>50</NachoToastium_Hexmesh>
+        </products>
+    </RecipeDef>
+
+</Defs>
