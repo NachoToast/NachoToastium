@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef ParentName="MakeableDrugPillBase">
+        <defName>NachoToastium_Painkillers</defName>
+        <label>painkiller</label>
+        <description>A drug for reducing pain and discomfort throughout the body. Effective for up to 24 hours.</description>
+        <possessionCount>10</possessionCount>
+        <descriptionHyperlinks><HediffDef>NachoToastium_PainkillerHigh</HediffDef></descriptionHyperlinks>
+        <graphicData>
+            <texPath>Things/Item/Drug/Penoxycyline</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <socialPropernessMatters>false</socialPropernessMatters>
+        <rotatable>false</rotatable>
+        <statBases>
+            <WorkToMake>400</WorkToMake>
+            <MarketValue>9</MarketValue>
+            <Mass>0.005</Mass>
+            <Flammability>0.7</Flammability>
+        </statBases>
+        <techLevel>Industrial</techLevel>
+        <ingestible>
+            <drugCategory>Medical</drugCategory>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>NachoToastium_PainkillerHigh</hediffDef>
+                    <severity>1.0</severity>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+        <recipeMaker>
+            <researchPrerequisite>NachoToastium_Painkillers</researchPrerequisite>
+            <recipeUsers>
+                <li>DrugLab</li>
+            </recipeUsers>
+        </recipeMaker>
+        <costList>
+            <MedicineHerbal>3</MedicineHerbal>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Drug">
+                <listOrder>40</listOrder>
+                <overdoseSeverityOffset>0.08~0.14</overdoseSeverityOffset>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <HediffDef>
+        <defName>NachoToastium_PainkillerHigh</defName>
+        <hediffClass>Hediff_High</hediffClass>
+        <label>painkillers</label>
+        <description>Partial dulling from all sources of pain.</description>
+        <defaultLabelColor>(0.75, 0.75, 0.75)</defaultLabelColor>
+        <scenarioCanAdd>true</scenarioCanAdd>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-1.00</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <painFactor>0.3</painFactor>
+            </li>
+        </stages>
+  </HediffDef>
+
+</Defs>
