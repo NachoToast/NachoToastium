@@ -5,6 +5,10 @@ name: .NET CI
 
 on: [push, pull_request]
 
+defaults:
+    run:
+        working-directory: source
+
 jobs:
     build:
         runs-on: ubuntu-latest
