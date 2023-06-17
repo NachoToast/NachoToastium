@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <RecipeDef Name="NachoToastium_DrillingBase" Abstract="True">
+        <effectWorking>Drill</effectWorking>
+        <soundWorking>ScannerGroundPenetrating_Ambience</soundWorking>
+        <workSpeedStat>DeepDrillingSpeed</workSpeedStat>
+        <workSkill>Mining</workSkill>
+        <workAmount>1000</workAmount>
+        <recipeUsers>
+            <li>NachoToastium_DeepDrill</li>
+        </recipeUsers>
+    </RecipeDef>
+
+    <RecipeDef ParentName="NachoToastium_DrillingBase">
+        <defName>NachoToastium_DrillSteel</defName>
+        <jobString>Drilling for steel.</jobString>
+        <label>drill steel</label>
+        <description>Drill steel.</description>
+        <products>
+            <Steel>75</Steel>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="NachoToastium_DrillingBase">
+        <defName>NachoToastium_DrillPlasteel</defName>
+        <jobString>Drilling for plasteel.</jobString>
+        <label>drill plasteel</label>
+        <description>Drill plasteel.</description>
+        <products>
+            <Plasteel>60</Plasteel>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="NachoToastium_DrillingBase">
+        <defName>NachoToastium_DrillUranium</defName>
+        <jobString>Drilling for uranium.</jobString>
+        <label>drill uranium</label>
+        <description>Drill uranium.</description>
+        <products>
+            <Uranium>40</Uranium>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="NachoToastium_DrillingBase">
+        <defName>NachoToastium_DrillGold</defName>
+        <jobString>Drilling for gold.</jobString>
+        <label>drill gold</label>
+        <description>Drill gold.</description>
+        <products>
+            <Gold>20</Gold>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="NachoToastium_DrillingBase">
+        <defName>NachoToastium_DrillSilver</defName>
+        <jobString>Drilling for silver.</jobString>
+        <label>drill silver</label>
+        <description>Drill silver.</description>
+        <products>
+            <Silver>40</Silver>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="NachoToastium_DrillingBase">
+        <defName>NachoToastium_DrillJade</defName>
+        <jobString>Drilling for jade.</jobString>
+        <label>drill jade</label>
+        <description>Drill jade.</description>
+        <products>
+            <Jade>40</Jade>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="NachoToastium_DrillingBase">
+        <defName>NachoToastium_DrillMarble</defName>
+        <jobString>Drilling for marble.</jobString>
+        <label>drill marble</label>
+        <description>Drill marble.</description>
+        <products>
+            <BlocksMarble>75</BlocksMarble>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="NachoToastium_DrillingBase">
+        <defName>NachoToastium_DrillGranite</defName>
+        <jobString>Drilling for granite.</jobString>
+        <label>drill granite</label>
+        <description>Drill granite.</description>
+        <products>
+            <BlocksGranite>75</BlocksGranite>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="NachoToastium_DrillingBase">
+        <defName>NachoToastium_DrillSlate</defName>
+        <jobString>Drilling for slate.</jobString>
+        <label>drill slate</label>
+        <description>Drill slate.</description>
+        <products>
+            <BlocksSlate>75</BlocksSlate>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="NachoToastium_DrillingBase">
+        <defName>NachoToastium_DrillLimestone</defName>
+        <jobString>Drilling for limestone.</jobString>
+        <label>drill limestone</label>
+        <description>Drill limestone.</description>
+        <products>
+            <BlocksLimestone>75</BlocksLimestone>
+        </products>
+    </RecipeDef>
+
+</Defs>
