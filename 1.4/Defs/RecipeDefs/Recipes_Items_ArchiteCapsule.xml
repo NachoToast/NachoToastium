@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <RecipeDef MayRequire="Ludeon.RimWorld.Biotech">
+        <defName>NachoToastium_MakeArchiteCapsule</defName>
+        <label>make archite capsule</label>
+        <description>Make an archite capsule.</description>
+        <jobString>Making archite capsule.</jobString>
+        <effectWorking>MechRepairing</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <workAmount>45000</workAmount>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentSpacer</li>
+                    </thingDefs>
+                </filter>
+                <count>3</count>
+            </li>
+        </ingredients>
+        <products>
+            <ArchiteCapsule>1</ArchiteCapsule>
+        </products>
+        <researchPrerequisites>
+            <li>NachoToastium_Archotechnology</li>
+        </researchPrerequisites>
+        <recipeUsers>
+            <li>FabricationBench</li>
+        </recipeUsers>
+        <skillRequirements>
+            <Crafting>12</Crafting>
+        </skillRequirements>
+        <unfinishedThingDef>NachoToastium_UnfinishedArchiteCapsule</unfinishedThingDef>
+    </RecipeDef>
+
+</Defs>
