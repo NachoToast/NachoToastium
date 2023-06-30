@@ -2,7 +2,6 @@
 <Patch>
 
     <!-- patches [FSF] Complex Jobs to show advanced drill as 'FSFDrilling' work type instead of mining -->
-
     <Operation Class="PatchOperationFindMod">
         <mods>
             <li>[FSF] Complex Jobs</li>
