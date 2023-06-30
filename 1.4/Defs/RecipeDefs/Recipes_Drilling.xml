@@ -112,4 +112,14 @@
         </products>
     </RecipeDef>
 
+    <RecipeDef ParentName="NachoToastium_DrillingBase">
+        <defName>NachoToastium_DrillSandstone</defName>
+        <jobString>Drilling for sandstone.</jobString>
+        <label>drill sandstone</label>
+        <description>Drill sandstone.</description>
+        <products>
+            <BlocksSandstone>75</BlocksSandstone>
+        </products>
+    </RecipeDef>
+
 </Defs>
