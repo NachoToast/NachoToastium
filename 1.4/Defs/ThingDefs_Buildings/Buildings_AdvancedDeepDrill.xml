@@ -31,6 +31,8 @@
             <Beauty>-25</Beauty>
             <Mass>55</Mass>
         </statBases>
+        <minifiedDef />
+        <thingCategories Inherit="false" />
         <size>(1,1)</size>
         <designationCategory>Production</designationCategory>
         <passability>PassThroughOnly</passability>
