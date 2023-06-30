@@ -53,17 +53,16 @@
             <li Class="CompProperties_Flickable"/>
             <li Class="CompProperties_Power">
                 <compClass>CompPowerTrader</compClass>
-                <basePowerConsumption>400</basePowerConsumption>
+                <basePowerConsumption>700</basePowerConsumption>
             </li>
         </comps>
         <placeWorkers>
             <li>PlaceWorker_PreventInteractionSpotOverlap</li>
         </placeWorkers>
         <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-        <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+        <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
         <uiIconOffset>(0, 0.03)</uiIconOffset>
         <uiIconScale>0.85</uiIconScale>
-        <minifiedDef>MinifiedThing</minifiedDef>
         <researchPrerequisites>
             <li>NachoToastium_LithosphericExtraction</li>
         </researchPrerequisites>
