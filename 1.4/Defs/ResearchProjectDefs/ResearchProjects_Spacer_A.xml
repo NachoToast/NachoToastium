@@ -12,7 +12,7 @@
 
     <ResearchProjectDef ParentName="NachoToastium_Base_Spacer_A">
         <defName>NachoToastium_NeutroamineSynthesis</defName>
-        <label>Neutroamine synthesis</label>
+        <label>neutroamine synthesis</label>
         <description>Synthesize neutroamine by combining herbal medicine and psychoid leaves.</description>
         <baseCost>1500</baseCost>
         <prerequisites>
@@ -24,7 +24,7 @@
 
     <ResearchProjectDef ParentName="NachoToastium_Base_Spacer_A">
         <defName>NachoToastium_SynthreadWeaving</defName>
-        <label>Synthread weaving</label>
+        <label>synthread weaving</label>
         <description>Create synthread by interweaving plasteel and cloth.</description>
         <baseCost>1500</baseCost>
         <prerequisites>
@@ -36,7 +36,7 @@
 
     <ResearchProjectDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="NachoToastium_Base_Spacer_A">
         <defName>NachoToastium_Engraving</defName>
-        <label>Engraving</label>
+        <label>engraving</label>
         <description>Engrave intricate patterns and emblems onto pawns, further increasing their royal favour value.</description>
         <baseCost>900</baseCost>
         <prerequisites>

@@ -12,7 +12,7 @@
 
     <ResearchProjectDef ParentName="NachoToastium_Base_Archotech">
         <defName>NachoToastium_Archotechnology</defName>
-        <label>Archotechnology</label>
+        <label>archotechnology</label>
         <description>Understand the fundamental inner workings of archotech artifacts.</description>
         <baseCost>10000</baseCost>
         <prerequisites>
@@ -25,7 +25,7 @@
 
     <ResearchProjectDef ParentName="NachoToastium_Base_Archotech">
         <defName>NachoToastium_SerumEngineering</defName>
-        <label>Serum engineering</label>
+        <label>serum engineering</label>
         <description>Engineer healer, resurrector, and skilltrainer mech serums.</description>
         <baseCost>6000</baseCost>
         <prerequisites>
@@ -39,7 +39,7 @@
 
     <ResearchProjectDef ParentName="NachoToastium_Base_Archotech">
         <defName>NachoToastium_ArtificialIntelligence</defName>
-        <label>Artificial intelligence</label>
+        <label>artificial intelligence</label>
         <description>Simulate true artificial intelligence.</description>
         <baseCost>6000</baseCost>
         <prerequisites>
@@ -58,7 +58,7 @@
 
     <ResearchProjectDef ParentName="NachoToastium_Base_Archotech">
         <defName>NachoToastium_PsychicStudy</defName>
-        <label>Psychic study</label>
+        <label>psychic study</label>
         <description>Install techprof subpersona cores into emanators to create psychic emanators.</description>
         <baseCost>2000</baseCost>
         <prerequisites>
@@ -71,7 +71,7 @@
 
     <ResearchProjectDef ParentName="NachoToastium_Base_Archotech">
         <defName>NachoToastium_Archosurgery</defName>
-        <label>Archosurgery</label>
+        <label>archosurgery</label>
         <description>Preparations to install self-made archotech implants and organs, involving complex interfacing with the recipients brain and nervous systems.</description>
         <baseCost>4000</baseCost>
         <prerequisites>
@@ -84,7 +84,7 @@
 
     <ResearchProjectDef ParentName="NachoToastium_Base_Archotech">
         <defName>NachoToastium_QuantumMining</defName>
-        <label>Quantum mining</label>
+        <label>quantum mining</label>
         <description>Drastically increase the efficiency and capability of extractors.</description>
         <baseCost>6000</baseCost>
         <prerequisites>
@@ -103,7 +103,7 @@
 
     <ResearchProjectDef ParentName="NachoToastium_Base_Archotech">
         <defName>NachoToastium_ArchotechBrain</defName>
-        <label>Archotech brain</label>
+        <label>archotech brain</label>
         <description>Create archotech brains, eliminating the need for sleep, increasing consciousness, and giving the user a permanent feeling of happiness.</description>
         <baseCost>6000</baseCost>
         <prerequisites>
@@ -117,7 +117,7 @@
 
     <ResearchProjectDef ParentName="NachoToastium_Base_Archotech">
         <defName>NachoToastium_ArchotechNerves</defName>
-        <label>Archotech nerves</label>
+        <label>archotech nerves</label>
         <description>Design archotech nerves, nullifying pain and increasing reactivity.</description>
         <baseCost>6000</baseCost>
         <prerequisites>
@@ -130,7 +130,7 @@
 
     <ResearchProjectDef ParentName="NachoToastium_Base_Archotech">
         <defName>NachoToastium_ArchotechSkin</defName>
-        <label>Archotech skin</label>
+        <label>archotech skin</label>
         <description>Tailor archotech skin, massively reducing damage and increasing beauty.</description>
         <baseCost>6000</baseCost>
         <prerequisites>
@@ -144,7 +144,7 @@
 
     <ResearchProjectDef ParentName="NachoToastium_Base_Archotech">
         <defName>NachoToastium_ArchotechLimbs</defName>
-        <label>Archotech limbs</label>
+        <label>archotech limbs</label>
         <description>Create archotech legs, arms, and eyes.</description>
         <baseCost>6000</baseCost>
         <prerequisites>
@@ -157,7 +157,7 @@
 
     <ResearchProjectDef ParentName="NachoToastium_Base_Archotech">
         <defName>NachoToastium_TechprofAssistant</defName>
-        <label>Techprof assistant</label>
+        <label>techprof assistant</label>
         <description>Create installable techprof assistants, which can be implanted into the brain to improve learning.</description>
         <baseCost>6000</baseCost>
         <prerequisites>
@@ -172,7 +172,7 @@
 
     <ResearchProjectDef ParentName="NachoToastium_Base_Archotech">
         <defName>NachoToastium_Archonanites</defName>
-        <label>Archonanites</label>
+        <label>archonanites</label>
         <description>Create self-sustainable swams of archotech nanites, which can be injected into the blood to rapidly increase wound healing.</description>
         <baseCost>6000</baseCost>
         <prerequisites>
@@ -185,7 +185,7 @@
 
     <ResearchProjectDef ParentName="NachoToastium_Base_Archotech">
         <defName>NachoToastium_VanometricStomach</defName>
-        <label>Vanometric stomach</label>
+        <label>vanometric stomach</label>
         <description>Create vanometric stomachs, negating the need for food and giving full immunity to food poisoning.</description>
         <baseCost>6000</baseCost>
         <prerequisites>

@@ -8,7 +8,7 @@
 
     <ResearchProjectDef ParentName="NachoToastium_Base_Industrial">
         <defName>NachoToastium_Painkillers</defName>
-        <label>Painkillers</label>
+        <label>painkillers</label>
         <description>Brew pain relief drugs out of herbal medicine.</description>
         <baseCost>500</baseCost>
         <prerequisites>
@@ -20,7 +20,7 @@
 
     <ResearchProjectDef ParentName="NachoToastium_Base_Industrial">
         <defName>NachoToastium_PlasteelCuring</defName>
-        <label>Plasteel curing</label>
+        <label>plasteel curing</label>
         <description>Produce plasteel by curing steel in vats of chemfuel.</description>
         <baseCost>1000</baseCost>
         <prerequisites>
@@ -32,7 +32,7 @@
 
     <ResearchProjectDef ParentName="NachoToastium_Base_Industrial">
         <defName>NachoToastium_LensSmithing</defName>
-        <label>Lens smithing</label>
+        <label>lens smithing</label>
         <description>Smith lenses to create telescopes.</description>
         <baseCost>300</baseCost>
         <prerequisites>
@@ -44,7 +44,7 @@
 
     <ResearchProjectDef ParentName="NachoToastium_Base_Industrial">
         <defName>NachoToastium_SteelCompression</defName>
-        <label>Steel compression</label>
+        <label>steel compression</label>
         <description>Compress and reinforce steel into barrels for mortars.</description>
         <baseCost>500</baseCost>
         <prerequisites>
@@ -57,7 +57,7 @@
 
     <ResearchProjectDef ParentName="NachoToastium_Base_Industrial">
         <defName>NachoToastium_Metallurgy</defName>
-        <label>Metallurgy</label>
+        <label>metallurgy</label>
         <description>Forge psychic foil helmets to combat psychic effects.</description>
         <baseCost>500</baseCost>
         <prerequisites>
@@ -79,7 +79,7 @@
 
     <ResearchProjectDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="NachoToastium_Base_Industrial">
         <defName>NachoToastium_Branding</defName>
-        <label>Branding</label>
+        <label>branding</label>
         <description>Brand the mark of the Empire onto pawns, increasing their royal favour value.</description>
         <baseCost>350</baseCost>
         <researchViewX>0.00</researchViewX>
@@ -97,7 +97,7 @@
 
     <ResearchProjectDef ParentName="NachoToastium_Base_Industrial">
         <defName>NachoToastium_Antibiotics</defName>
-        <label>Antiobiotics</label>
+        <label>antiobiotics</label>
         <description>Create anti-bacterial drugs using herbal medicine, this specific strain does not combat existing infections, but instead prevents new ones from appearing.</description>
         <baseCost>500</baseCost>
         <prerequisites>

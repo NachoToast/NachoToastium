@@ -15,7 +15,7 @@
 
     <ResearchProjectDef ParentName="NachoToastium_Base_Spacer_B">
         <defName>NachoToastium_AdvancedMoisturePump</defName>
-        <label>Advanced Moisture Pump</label>
+        <label>advanced moisture pump</label>
         <description>Construct improved moisture pumps, which work much faster and dry out a much larger area.</description>
         <baseCost>1500</baseCost>
         <prerequisites>
@@ -27,7 +27,7 @@
 
     <ResearchProjectDef ParentName="NachoToastium_Base_Spacer_B">
         <defName>NachoToastium_Excavation</defName>
-        <label>Excavation</label>
+        <label>excavation</label>
         <description>Excavate terrain into deep uncrossable moats.</description>
         <baseCost>1500</baseCost>
         <prerequisites>
