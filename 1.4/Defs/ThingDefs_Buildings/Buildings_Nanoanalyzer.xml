@@ -53,7 +53,7 @@
         <li Class="CompProperties_Flickable"/>
         <li Class="CompProperties_Facility">
             <statOffsets>
-                <ResearchSpeedFactor>1.0</ResearchSpeedFactor>
+                <ResearchSpeedFactor>0.6</ResearchSpeedFactor>
             </statOffsets>
             <maxSimultaneous>1</maxSimultaneous>
         </li>
