@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
+    <!-- nerf sell price since its so cheap to make -->
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName="Apparel_PsychicFoilHelmet"]/statBases</xpath>
         <value>
@@ -8,13 +9,7 @@
         </value>
     </Operation>
 
-    <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[defName="Apparel_PsychicFoilHelmet"]/smeltable</xpath>
-        <value>
-            <smeltable>true</smeltable>
-        </value>
-    </Operation>
-
+    <!-- add recipe -->
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName="Apparel_PsychicFoilHelmet"]</xpath>
         <value>
@@ -36,6 +31,14 @@
                     <li>NachoToastium_Metallurgy</li>
                 </researchPrerequisites>
             </recipeMaker>
+        </value>
+    </Operation>
+
+    <!-- make smeltable, since it now has ingredients -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Apparel_PsychicFoilHelmet"]/smeltable</xpath>
+        <value>
+            <smeltable>true</smeltable>
         </value>
     </Operation>
 
