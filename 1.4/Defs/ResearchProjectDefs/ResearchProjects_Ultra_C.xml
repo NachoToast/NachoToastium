@@ -63,30 +63,6 @@
         <researchViewY>5.00</researchViewY>
     </ResearchProjectDef>
 
-    <ResearchProjectDef ParentName="NachoToastium_Base_Ultra_C">
-        <defName>NachoToastium_HexmeshFabrication</defName>
-        <label>Hexmesh fabrication</label>
-        <description>Fabricate hexmesh, a malleable yet strong fabric made of hex-shaped tiles.</description>
-        <baseCost>2500</baseCost>
-        <prerequisites>
-            <li>NachoToastium_HyperweaveProduction</li>
-        </prerequisites>
-        <researchViewX>4.00</researchViewX>
-        <researchViewY>3.50</researchViewY>
-    </ResearchProjectDef>
-
-    <ResearchProjectDef ParentName="NachoToastium_Base_Ultra_C">
-        <defName>NachoToastium_Manufacturing</defName>
-        <label>Manufacturing</label>
-        <description>Unlock research for optimizing assembly processes for hexmesh and chipsteel.</description>
-        <baseCost>2500</baseCost>
-        <prerequisites>
-            <li>NachoToastium_Nanoelectronics</li>
-        </prerequisites>
-        <researchViewX>3.00</researchViewX>
-        <researchViewY>4.50</researchViewY>
-    </ResearchProjectDef>
-
     <ResearchProjectDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="NachoToastium_Base_Ultra_C">
         <defName>NachoToastium_Neurosurgery</defName>
         <label>Neurosurgery</label>
@@ -102,34 +78,8 @@
         <heldByFactionCategoryTags>
             <li>Empire</li>
         </heldByFactionCategoryTags>
-        <researchViewX>5.00</researchViewX>
+        <researchViewX>4.00</researchViewX>
         <researchViewY>3.50</researchViewY>
-    </ResearchProjectDef>
-
-    <ResearchProjectDef ParentName="NachoToastium_Base_Ultra_C">
-        <defName>NachoToastium_HexmeshAssembly</defName>
-        <label>Hexmesh assembly</label>
-        <description>Improve assembly techniques to print two times as many hextech tiles.</description>
-        <baseCost>2500</baseCost>
-        <prerequisites>
-            <li>NachoToastium_HexmeshFabrication</li>
-            <li>NachoToastium_Manufacturing</li>
-        </prerequisites>
-        <researchViewX>5.00</researchViewX>
-        <researchViewY>4.00</researchViewY>
-    </ResearchProjectDef>
-
-    <ResearchProjectDef ParentName="NachoToastium_Base_Ultra_C">
-        <defName>NachoToastium_ChipsteelAggregation</defName>
-        <label>Chipsteel aggregation</label>
-        <description>Optimize the mixing process of chipsteel for a tripled yield.</description>
-        <baseCost>2500</baseCost>
-        <prerequisites>
-            <li>NachoToastium_ChipsteelMixing</li>
-            <li>NachoToastium_Manufacturing</li>
-        </prerequisites>
-        <researchViewX>5.00</researchViewX>
-        <researchViewY>5.00</researchViewY>
     </ResearchProjectDef>
 
     <ResearchProjectDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="NachoToastium_Base_Ultra_C">
@@ -141,7 +91,7 @@
             <li>NachoToastium_Neurosurgery</li>
             <li>SpecializedLimbs</li>
         </prerequisites>
-        <researchViewX>6.00</researchViewX>
+        <researchViewX>5.00</researchViewX>
         <researchViewY>4.00</researchViewY>
     </ResearchProjectDef>
 
@@ -154,7 +104,7 @@
             <li>NachoToastium_Neurosurgery</li>
             <li>SpecializedLimbs</li>
         </prerequisites>
-        <researchViewX>6.00</researchViewX>
+        <researchViewX>5.00</researchViewX>
         <researchViewY>4.50</researchViewY>
     </ResearchProjectDef>
 
@@ -167,7 +117,7 @@
             <li>NachoToastium_Neurosurgery</li>
             <li>Gunlink</li>
         </prerequisites>
-        <researchViewX>6.00</researchViewX>
+        <researchViewX>5.00</researchViewX>
         <researchViewY>5.00</researchViewY>
     </ResearchProjectDef>
 

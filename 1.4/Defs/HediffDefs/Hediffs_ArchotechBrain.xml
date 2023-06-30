@@ -31,7 +31,7 @@
             <RecipeDef>NachoToastium_InstallArchotechBrain</RecipeDef>
         </descriptionHyperlinks>
         <costList>
-            <NachoToastium_Hexmesh>15</NachoToastium_Hexmesh>
+            <Hyperweave>15</Hyperweave>
             <MedicineUltratech>1</MedicineUltratech>
             <AIPersonaCore>1</AIPersonaCore>
         </costList>

@@ -19,7 +19,7 @@
             <li>NachoToastium_Nanoelectronics</li>
             <li MayRequire="Ludeon.RimWorld.Biotech">Archogenetics</li>
         </prerequisites>
-        <researchViewX>6.00</researchViewX>
+        <researchViewX>5.00</researchViewX>
         <researchViewY>3.00</researchViewY>
     </ResearchProjectDef>
 
@@ -33,7 +33,7 @@
             <li>NachoToastium_AdvancedMedicine</li>
             <li>NachoToastium_LuciferiumFabrication</li>
         </prerequisites>
-        <researchViewX>7.00</researchViewX>
+        <researchViewX>6.00</researchViewX>
         <researchViewY>0.00</researchViewY>
     </ResearchProjectDef>
 
@@ -52,7 +52,7 @@
         <heldByFactionCategoryTags>
             <li>Empire</li>
         </heldByFactionCategoryTags>
-        <researchViewX>7.00</researchViewX>
+        <researchViewX>6.00</researchViewX>
         <researchViewY>1.00</researchViewY>
     </ResearchProjectDef>
 
@@ -65,7 +65,7 @@
             <li>NachoToastium_Archotechnology</li>
             <li>NachoToastium_MachineLearning</li>
         </prerequisites>
-        <researchViewX>7.00</researchViewX>
+        <researchViewX>6.00</researchViewX>
         <researchViewY>2.00</researchViewY>
     </ResearchProjectDef>
 
@@ -78,7 +78,7 @@
             <li>NachoToastium_Archotechnology</li>
             <li MayRequire="Ludeon.RimWorld.Royalty">NachoToastium_Neurosurgery</li>
         </prerequisites>
-        <researchViewX>7.00</researchViewX>
+        <researchViewX>6.00</researchViewX>
         <researchViewY>3.50</researchViewY>
     </ResearchProjectDef>
 
@@ -97,7 +97,7 @@
         <heldByFactionCategoryTags>
             <li>Empire</li>
         </heldByFactionCategoryTags>
-        <researchViewX>7.00</researchViewX>
+        <researchViewX>6.00</researchViewX>
         <researchViewY>6.00</researchViewY>
     </ResearchProjectDef>
 
@@ -111,10 +111,7 @@
             <li MayRequire="Ludeon.RimWorld.Royalty">CircadianInfluence</li>
             <li MayRequire="Ludeon.RimWorld.Royalty">NeuralComputation</li>
         </prerequisites>
-        <hiddenPrerequisites>
-            <li>NachoToastium_HexmeshFabrication</li>
-        </hiddenPrerequisites>
-        <researchViewX>8.00</researchViewX>
+        <researchViewX>7.00</researchViewX>
         <researchViewY>4.00</researchViewY>
     </ResearchProjectDef>
 
@@ -127,10 +124,7 @@
             <li>NachoToastium_Archosurgery</li>
             <li MayRequire="Ludeon.RimWorld.Royalty">NeuralComputation</li>
         </prerequisites>
-        <hiddenPrerequisites>
-            <li>NachoToastium_ChipsteelMixing</li>
-        </hiddenPrerequisites>
-        <researchViewX>8.00</researchViewX>
+        <researchViewX>7.00</researchViewX>
         <researchViewY>4.50</researchViewY>
     </ResearchProjectDef>
 
@@ -144,10 +138,7 @@
             <li MayRequire="Ludeon.RimWorld.Royalty">FleshShaping</li>
             <li MayRequire="Ludeon.RimWorld.Royalty">SkinHardening</li>
         </prerequisites>
-        <hiddenPrerequisites>
-            <li>NachoToastium_HexmeshFabrication</li>
-        </hiddenPrerequisites>
-        <researchViewX>8.00</researchViewX>
+        <researchViewX>7.00</researchViewX>
         <researchViewY>5.00</researchViewY>
     </ResearchProjectDef>
 
@@ -160,10 +151,7 @@
             <li>NachoToastium_Archosurgery</li>
             <li>Bionics</li>
         </prerequisites>
-        <hiddenPrerequisites>
-            <li>NachoToastium_ChipsteelMixing</li>
-        </hiddenPrerequisites>
-        <researchViewX>8.00</researchViewX>
+        <researchViewX>7.00</researchViewX>
         <researchViewY>5.50</researchViewY>
     </ResearchProjectDef>
 
@@ -177,9 +165,8 @@
         </prerequisites>
         <hiddenPrerequisites>
             <li>NachoToastium_MachineLearning</li>
-            <li>NachoToastium_HexmeshFabrication</li>
         </hiddenPrerequisites>
-        <researchViewX>9.00</researchViewX>
+        <researchViewX>8.00</researchViewX>
         <researchViewY>4.00</researchViewY>
     </ResearchProjectDef>
 
@@ -192,7 +179,7 @@
             <li>NachoToastium_Archosurgery</li>
             <li MayRequire="Ludeon.RimWorld.Royalty">HealingFactors</li>
         </prerequisites>
-        <researchViewX>9.00</researchViewX>
+        <researchViewX>8.00</researchViewX>
         <researchViewY>4.50</researchViewY>
     </ResearchProjectDef>
 
@@ -206,10 +193,7 @@
             <li MayRequire="Ludeon.RimWorld.Royalty">MolecularAnalysis</li>
             <li MayRequire="Ludeon.RimWorld.Royalty">ArtificialMetabolism</li>
         </prerequisites>
-        <hiddenPrerequisites>
-            <li>NachoToastium_HexmeshFabrication</li>
-        </hiddenPrerequisites>
-        <researchViewX>9.00</researchViewX>
+        <researchViewX>8.00</researchViewX>
         <researchViewY>5.00</researchViewY>
     </ResearchProjectDef>
 

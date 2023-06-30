@@ -36,7 +36,7 @@
             <RecipeDef>NachoToastium_InstallArchotechNerves</RecipeDef>
         </descriptionHyperlinks>
         <costList>
-            <NachoToastium_Chipsteel>3</NachoToastium_Chipsteel>
+            <Plasteel>3</Plasteel>
             <MedicineUltratech>3</MedicineUltratech>
             <ComponentSpacer>6</ComponentSpacer>
         </costList>

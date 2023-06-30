@@ -33,7 +33,7 @@
         <costList>
             <TechprofSubpersonaCore>1</TechprofSubpersonaCore>
             <MedicineUltratech>1</MedicineUltratech>
-            <NachoToastium_Hexmesh>8</NachoToastium_Hexmesh>
+            <Hyperweave>8</Hyperweave>
         </costList>
         <recipeMaker>
             <workSpeedStat>GeneralLaborSpeed</workSpeedStat>

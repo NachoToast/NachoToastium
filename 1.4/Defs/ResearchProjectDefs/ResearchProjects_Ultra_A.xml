@@ -13,13 +13,4 @@
         </prerequisites>
     </ResearchProjectDef>
 
-    <ResearchProjectDef ParentName="NachoToastium_Base_Ultra_A">
-        <defName>NachoToastium_ChipsteelMixing</defName>
-        <label>Chipsteel mixing</label>
-        <description>Mix steel, uranium, and plasteel into chipsteel, a versatile and durable metal.</description>
-        <baseCost>2500</baseCost>
-        <researchViewX>4.00</researchViewX>
-        <researchViewY>5.50</researchViewY>
-    </ResearchProjectDef>
-
 </Defs>
