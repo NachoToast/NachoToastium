@@ -83,25 +83,6 @@
     </ResearchProjectDef>
 
     <ResearchProjectDef ParentName="NachoToastium_Base_Archotech">
-        <defName>NachoToastium_QuantumMining</defName>
-        <label>quantum mining</label>
-        <description>Drastically increase the efficiency and capability of extractors.</description>
-        <baseCost>6000</baseCost>
-        <prerequisites>
-            <li>NachoToastium_LithosphericExtraction</li>
-            <li>NachoToastium_Archotechnology</li>
-        </prerequisites>
-        <techprintCount>2</techprintCount>
-        <techprintCommonality>1</techprintCommonality>
-        <techprintMarketValue>4000</techprintMarketValue>
-        <heldByFactionCategoryTags>
-            <li>Empire</li>
-        </heldByFactionCategoryTags>
-        <researchViewX>6.00</researchViewX>
-        <researchViewY>6.00</researchViewY>
-    </ResearchProjectDef>
-
-    <ResearchProjectDef ParentName="NachoToastium_Base_Archotech">
         <defName>NachoToastium_ArchotechBrain</defName>
         <label>archotech brain</label>
         <description>Create archotech brains, eliminating the need for sleep, increasing consciousness, and giving the user a permanent feeling of happiness.</description>
