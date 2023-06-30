@@ -5,7 +5,7 @@
         <defName>NachoToastium_MakeAntigrainWarhead</defName>
         <label>make antigrain warhead</label>
         <description>Make an antigrain warhead.</description>
-        <jobString>Making high-explosive shell.</jobString>
+        <jobString>Making antigrain warhead.</jobString>
         <effectWorking>Cook</effectWorking>
         <soundWorking>Recipe_Machining</soundWorking>
         <workAmount>1600</workAmount>
