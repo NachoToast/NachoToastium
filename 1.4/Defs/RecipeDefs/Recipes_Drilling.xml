@@ -6,7 +6,7 @@
         <soundWorking>ScannerGroundPenetrating_Ambience</soundWorking>
         <workSpeedStat>DeepDrillingSpeed</workSpeedStat>
         <workSkill>Mining</workSkill>
-        <workAmount>1000</workAmount>
+        <workAmount>5000</workAmount>
         <recipeUsers>
             <li>NachoToastium_DeepDrill</li>
         </recipeUsers>
