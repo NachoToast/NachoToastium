@@ -14,8 +14,7 @@
             <li>DrugLab</li>
         </recipeUsers>
         <skillRequirements>
-            <Crafting>12</Crafting>
-            <Intellectual>12</Intellectual>
+            <Crafting>10</Crafting>
         </skillRequirements>
         <ingredients>
             <li>

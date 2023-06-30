@@ -15,7 +15,7 @@
                 <li>NachoToastium_AdvancedGunlink</li>
             </researchPrerequisites>
             <skillRequirements>
-                <Crafting>12</Crafting>
+                <Crafting>10</Crafting>
             </skillRequirements>
             <recipeUsers Inherit="False">
                 <li>FabricationBench</li>

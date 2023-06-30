@@ -9,7 +9,7 @@
         <soundWorking>Recipe_Machining</soundWorking>
         <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
         <skillRequirements>
-            <Crafting>10</Crafting>
+            <Crafting>12</Crafting>
         </skillRequirements>
         <recipeUsers>
             <li>FabricationBench</li>

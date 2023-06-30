@@ -48,7 +48,7 @@
                 <li>FabricationBench</li>
             </recipeUsers>
             <skillRequirements>
-                <Crafting>11</Crafting>
+                <Crafting>12</Crafting>
             </skillRequirements>
             <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
             <researchPrerequisites>

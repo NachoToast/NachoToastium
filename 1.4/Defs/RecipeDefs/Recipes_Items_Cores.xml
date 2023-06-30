@@ -31,7 +31,7 @@
         <defName>NachoToastium_MakeTechprof</defName>
         <label>make techprof subpersona core</label>
         <description>Make a techprof subpersona core.</description>
-        <workAmount>10000</workAmount>
+        <workAmount>15000</workAmount>
         <jobString>Making techprof subpersona core.</jobString>
         <researchPrerequisites>
             <li>NachoToastium_MachineLearning</li>
@@ -40,7 +40,7 @@
             <li>FabricationBench</li>
         </recipeUsers>
         <skillRequirements>
-            <Crafting>10</Crafting>
+            <Crafting>12</Crafting>
             <Intellectual>8</Intellectual>
         </skillRequirements>
         <ingredients>
@@ -71,7 +71,7 @@
             <li>FabricationBench</li>
         </recipeUsers>
         <skillRequirements>
-            <Crafting>12</Crafting>
+            <Crafting>14</Crafting>
             <Intellectual>12</Intellectual>
         </skillRequirements>
         <ingredients>

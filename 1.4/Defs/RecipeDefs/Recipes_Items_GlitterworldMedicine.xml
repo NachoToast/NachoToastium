@@ -15,7 +15,6 @@
         </recipeUsers>
         <skillRequirements>
             <Crafting>8</Crafting>
-            <Intellectual>8</Intellectual>
         </skillRequirements>
     </RecipeDef>
 
