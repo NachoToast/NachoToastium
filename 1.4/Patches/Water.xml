@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
+    <!-- lets us place things on deep water (as long as they have the right affordance) -->
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/TerrainDef[@Name="WaterDeepBase"]/changeable</xpath>
         <value>
@@ -8,6 +9,7 @@
         </value>
     </Operation>
 
+    <!-- make shallow water buildable, with an accompanying description and prerequisite -->
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/TerrainDef[defName="WaterShallow"]</xpath>
         <value>
@@ -25,6 +27,7 @@
         </value>
     </Operation>
     
+    <!-- same for shallow ocean water, for players on ocean-adjacent tiles -->
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/TerrainDef[defName="WaterOceanShallow"]</xpath>
         <value>
@@ -42,6 +45,7 @@
         </value>
     </Operation>
 
+    <!-- same for deep water -->
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/TerrainDef[defName="WaterDeep"]</xpath>
         <value>
@@ -59,6 +63,7 @@
         </value>
     </Operation>
 
+    <!-- and deep ocean water -->
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/TerrainDef[defName="WaterOceanDeep"]</xpath>
         <value>
