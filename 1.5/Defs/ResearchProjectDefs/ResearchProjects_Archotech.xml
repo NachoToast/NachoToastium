@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ResearchProjectDef Abstract="True" Name="NachoToastium_Base_Archotech">
+        <techLevel>Archotech</techLevel>
+        <tab>NachoToastium</tab>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+            <li>NachoToastium_NanoAnalyzer</li>
+        </requiredResearchFacilities>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="NachoToastium_Base_Archotech">
+        <defName>NachoToastium_Archotechnology</defName>
+        <label>archotechnology</label>
+        <description>Understand the fundamental inner workings of archotech artifacts.</description>
+        <baseCost>10000</baseCost>
+        <prerequisites>
+            <li>NachoToastium_Nanoelectronics</li>
+            <li MayRequire="Ludeon.RimWorld.Biotech">Archogenetics</li>
+        </prerequisites>
+        <researchViewX>5.00</researchViewX>
+        <researchViewY>3.00</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="NachoToastium_Base_Archotech">
+        <defName>NachoToastium_SerumEngineering</defName>
+        <label>serum engineering</label>
+        <description>Engineer healer, resurrector, and skilltrainer mech serums.</description>
+        <baseCost>6000</baseCost>
+        <prerequisites>
+            <li>NachoToastium_Archotechnology</li>
+            <li>NachoToastium_AdvancedMedicine</li>
+            <li>NachoToastium_LuciferiumFabrication</li>
+        </prerequisites>
+        <researchViewX>6.00</researchViewX>
+        <researchViewY>0.00</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="NachoToastium_Base_Archotech">
+        <defName>NachoToastium_ArtificialIntelligence</defName>
+        <label>artificial intelligence</label>
+        <description>Simulate true artificial intelligence.</description>
+        <baseCost>6000</baseCost>
+        <prerequisites>
+            <li>NachoToastium_Archotechnology</li>
+            <li>NachoToastium_MachineLearning</li>
+        </prerequisites>
+        <researchViewX>6.00</researchViewX>
+        <researchViewY>1.00</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="NachoToastium_Base_Archotech">
+        <defName>NachoToastium_PsychicStudy</defName>
+        <label>psychic study</label>
+        <description>Install techprof subpersona cores into emanators to create psychic emanators.</description>
+        <baseCost>2000</baseCost>
+        <prerequisites>
+            <li>NachoToastium_Archotechnology</li>
+            <li>NachoToastium_MachineLearning</li>
+        </prerequisites>
+        <researchViewX>6.00</researchViewX>
+        <researchViewY>2.00</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="NachoToastium_Base_Archotech">
+        <defName>NachoToastium_Archosurgery</defName>
+        <label>archosurgery</label>
+        <description>Preparations to install self-made archotech implants and organs, involving complex interfacing with the recipients brain and nervous systems.</description>
+        <baseCost>4000</baseCost>
+        <prerequisites>
+            <li>NachoToastium_Archotechnology</li>
+            <li MayRequire="Ludeon.RimWorld.Royalty">NachoToastium_Neurosurgery</li>
+        </prerequisites>
+        <researchViewX>6.00</researchViewX>
+        <researchViewY>3.50</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="NachoToastium_Base_Archotech">
+        <defName>NachoToastium_ArchotechBrain</defName>
+        <label>archotech brain</label>
+        <description>Create archotech brains, eliminating the need for sleep, increasing consciousness, and giving the user a permanent feeling of happiness.</description>
+        <baseCost>6000</baseCost>
+        <prerequisites>
+            <li>NachoToastium_Archosurgery</li>
+            <li MayRequire="Ludeon.RimWorld.Royalty">CircadianInfluence</li>
+            <li MayRequire="Ludeon.RimWorld.Royalty">NeuralComputation</li>
+        </prerequisites>
+        <researchViewX>7.00</researchViewX>
+        <researchViewY>4.00</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="NachoToastium_Base_Archotech">
+        <defName>NachoToastium_ArchotechNerves</defName>
+        <label>archotech nerves</label>
+        <description>Design archotech nerves, nullifying pain and increasing reactivity.</description>
+        <baseCost>6000</baseCost>
+        <prerequisites>
+            <li>NachoToastium_Archosurgery</li>
+            <li MayRequire="Ludeon.RimWorld.Royalty">NeuralComputation</li>
+        </prerequisites>
+        <researchViewX>7.00</researchViewX>
+        <researchViewY>4.50</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="NachoToastium_Base_Archotech">
+        <defName>NachoToastium_ArchotechSkin</defName>
+        <label>archotech skin</label>
+        <description>Tailor archotech skin, massively reducing damage and increasing beauty.</description>
+        <baseCost>6000</baseCost>
+        <prerequisites>
+            <li>NachoToastium_Archosurgery</li>
+            <li MayRequire="Ludeon.RimWorld.Royalty">FleshShaping</li>
+            <li MayRequire="Ludeon.RimWorld.Royalty">SkinHardening</li>
+        </prerequisites>
+        <researchViewX>7.00</researchViewX>
+        <researchViewY>5.00</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="NachoToastium_Base_Archotech">
+        <defName>NachoToastium_ArchotechLimbs</defName>
+        <label>archotech limbs</label>
+        <description>Create archotech legs, arms, and eyes.</description>
+        <baseCost>6000</baseCost>
+        <prerequisites>
+            <li>NachoToastium_Archosurgery</li>
+            <li>Bionics</li>
+        </prerequisites>
+        <researchViewX>7.00</researchViewX>
+        <researchViewY>5.50</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="NachoToastium_Base_Archotech">
+        <defName>NachoToastium_TechprofAssistant</defName>
+        <label>techprof assistant</label>
+        <description>Create installable techprof assistants, which can be implanted into the brain to improve learning.</description>
+        <baseCost>6000</baseCost>
+        <prerequisites>
+            <li>NachoToastium_Archosurgery</li>
+        </prerequisites>
+        <hiddenPrerequisites>
+            <li>NachoToastium_MachineLearning</li>
+        </hiddenPrerequisites>
+        <researchViewX>8.00</researchViewX>
+        <researchViewY>4.00</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="NachoToastium_Base_Archotech">
+        <defName>NachoToastium_Archonanites</defName>
+        <label>archonanites</label>
+        <description>Create self-sustainable swams of archotech nanites, which can be injected into the blood to rapidly increase wound healing.</description>
+        <baseCost>6000</baseCost>
+        <prerequisites>
+            <li>NachoToastium_Archosurgery</li>
+            <li MayRequire="Ludeon.RimWorld.Royalty">HealingFactors</li>
+        </prerequisites>
+        <researchViewX>8.00</researchViewX>
+        <researchViewY>4.50</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="NachoToastium_Base_Archotech">
+        <defName>NachoToastium_VanometricStomach</defName>
+        <label>vanometric stomach</label>
+        <description>Create vanometric stomachs, negating the need for food and giving full immunity to food poisoning.</description>
+        <baseCost>6000</baseCost>
+        <prerequisites>
+            <li>NachoToastium_Archosurgery</li>
+            <li MayRequire="Ludeon.RimWorld.Royalty">MolecularAnalysis</li>
+            <li MayRequire="Ludeon.RimWorld.Royalty">ArtificialMetabolism</li>
+        </prerequisites>
+        <researchViewX>8.00</researchViewX>
+        <researchViewY>5.00</researchViewY>
+    </ResearchProjectDef>
+
+</Defs>

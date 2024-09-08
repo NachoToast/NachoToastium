@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <HediffDef ParentName="AddedBodyPartBase">
+        <defName>NachoToastium_ArchotechBrain</defName>
+        <label>archotech brain</label>
+        <labelNoun>an archotech brain</labelNoun>
+        <description>An installed archotech brain.</description>
+        <descriptionHyperlinks>
+            <ThingDef>NachoToastium_ArchotechBrain</ThingDef>
+        </descriptionHyperlinks>
+        <disablesNeeds>
+            <li>Rest</li>
+        </disablesNeeds>
+        <stages>
+            <li></li>
+        </stages>
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>1.50</partEfficiency>
+            <betterThanNatural>true</betterThanNatural>
+        </addedPartProps>
+        <spawnThingOnRemoved>NachoToastium_ArchotechBrain</spawnThingOnRemoved>
+    </HediffDef>
+
+    <ThingDef ParentName="BodyPartArchotechBase">
+        <defName>NachoToastium_ArchotechBrain</defName>
+        <label>archotech brain</label>
+        <description>A archotech brain, contains an AI to assist the user in day-to-day activities, drastically increasing cognitive abilities and removing the need for sleep entirely.</description>
+        <descriptionHyperlinks>
+            <RecipeDef>NachoToastium_InstallArchotechBrain</RecipeDef>
+        </descriptionHyperlinks>
+        <costList>
+            <Hyperweave>15</Hyperweave>
+            <MedicineUltratech>1</MedicineUltratech>
+            <AIPersonaCore>1</AIPersonaCore>
+        </costList>
+        <statBases>
+            <WorkToMake>36000</WorkToMake>
+            <MarketValue>9000</MarketValue>
+            <Mass>2.00</Mass>
+        </statBases>
+        <recipeMaker>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Machining</soundWorking>
+            <recipeUsers Inherit="False">
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <skillRequirements>
+                <Crafting>14</Crafting>
+            </skillRequirements>
+            <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+            <researchPrerequisites>
+                <li>NachoToastium_ArchotechBrain</li>
+            </researchPrerequisites>
+        </recipeMaker>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+        <defName>NachoToastium_InstallArchotechBrain</defName>
+        <label>install archotech brain</label>
+        <description>Install an archotech brain</description>
+        <descriptionHyperlinks>
+            <ThingDef>NachoToastium_ArchotechBrain</ThingDef>
+            <HediffDef>NachoToastium_ArchotechBrain</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Installing archotech brain.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>NachoToastium_ArchotechBrain</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>NachoToastium_ArchotechBrain</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Brain</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>NachoToastium_ArchotechBrain</addsHediff>
+    </RecipeDef>
+
+</Defs>

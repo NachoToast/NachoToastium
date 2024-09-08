@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- Techprints for certain research projects. -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Royalty</li>
+        </mods>
+
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ResearchProjectDef[defName="NachoToastium_ArtificialIntelligence"]</xpath>
+                    <value>
+                        <techprintCount>1</techprintCount>
+                        <techprintCommonality>1</techprintCommonality>
+                        <techprintMarketValue>3000</techprintMarketValue>
+                        <heldByFactionCategoryTags>
+                            <li>Empire</li>
+                        </heldByFactionCategoryTags>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ResearchProjectDef[defName="NachoToastium_Metallurgy"]</xpath>
+                    <value>
+                        <techprintCount>1</techprintCount>
+                        <techprintCommonality>3</techprintCommonality>
+                        <techprintMarketValue>250</techprintMarketValue>
+                        <heldByFactionCategoryTags>
+                            <li>Offworld</li>
+                            <li>Outlander</li>
+                            <li>Pirate</li>
+                            <li>Tribal</li>
+                            <li>Empire</li>
+                        </heldByFactionCategoryTags>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ResearchProjectDef[defName="NachoToastium_Excavation"]</xpath>
+                    <value>
+                        <techprintCount>1</techprintCount>
+                        <techprintCommonality>2</techprintCommonality>
+                        <techprintMarketValue>750</techprintMarketValue>
+                        <heldByFactionCategoryTags>
+                            <li>Offworld</li>
+                            <li>Outlander</li>
+                            <li>Pirate</li>
+                            <li>Empire</li>
+                        </heldByFactionCategoryTags>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ResearchProjectDef[defName="NachoToastium_LithosphericExtraction"]</xpath>
+                    <value>
+                        <techprintCount>2</techprintCount>
+                        <techprintCommonality>2</techprintCommonality>
+                        <techprintMarketValue>1000</techprintMarketValue>
+                        <heldByFactionCategoryTags>
+                            <li>Empire</li>
+                        </heldByFactionCategoryTags>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ResearchProjectDef[defName="NachoToastium_Neurosurgery"]</xpath>
+                    <value>
+                        <techprintCount>1</techprintCount>
+                        <techprintCommonality>1</techprintCommonality>
+                        <techprintMarketValue>2000</techprintMarketValue>
+                        <heldByFactionCategoryTags>
+                            <li>Empire</li>
+                        </heldByFactionCategoryTags>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

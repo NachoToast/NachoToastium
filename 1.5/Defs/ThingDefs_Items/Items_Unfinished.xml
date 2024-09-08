@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ThingDef ParentName="UnfinishedBase">
+        <defName>NachoToastium_UnfinishedArchiteCapsule</defName>
+        <label>unfinished archite capsule</label>
+        <description>An unfinished archite capsule</description>
+        <statBases>
+            <Flammability>0.5</Flammability>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Item/Unfinished/UnfinishedArchiteCapsule</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <color>(1.0, 1.0, 1.0)</color>
+        </graphicData>
+        <stuffCategories Inherit="false" />
+    </ThingDef>
+
+    <ThingDef ParentName="UnfinishedBase">
+        <defName>NachoToastium_UnfinishedReinforcedBarrel</defName>
+        <label>unfinished reinforced barrel</label>
+        <description>An unfinished reinforced barrel</description>
+        <graphicData>
+            <texPath>Things/Item/Unfinished/UnfinishedReinforcedBarrel</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <color>(1.0, 1.0, 1.0)</color>
+        </graphicData>
+        <stuffCategories Inherit="false" />
+    </ThingDef>
+
+    <ThingDef ParentName="UnfinishedBase">
+        <defName>NachoToastium_UnfinishedMechSerum</defName>
+        <label>unfinished mech serum</label>
+        <description>An unfinished mech serum</description>
+        <graphicData>
+            <texPath>Things/Item/Unfinished/UnfinishedMechSerum</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <color>(1.0, 1.0, 1.0)</color>
+        </graphicData>
+        <stuffCategories Inherit="false" />
+    </ThingDef>
+
+    <ThingDef ParentName="UnfinishedBase">
+        <defName>NachoToastium_UnfinishedCore</defName>
+        <label>unfinished AI core</label>
+        <description>An unfinished AI core</description>
+        <graphicData>
+            <texPath>Things/Item/Unfinished/UnfinishedCore</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <color>(1.0, 1.0, 1.0)</color>
+        </graphicData>
+        <stuffCategories Inherit="false" />
+    </ThingDef>
+
+</Defs>

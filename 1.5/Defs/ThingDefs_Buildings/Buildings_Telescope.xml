@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <!--
+        Pretty much a 1:1 copy of the telescope in core game, with reduced market value (350 to 50).
+
+        Patching the original def was avoided to allow compatibility with other telescope-modifying mods.
+    -->
+    <ThingDef ParentName="BuildingBase">
+        <defName>Telescope</defName>
+        <label>telescope</label>
+        <description>A self-made telescope for doing amateur astronomy. It's a relaxing hobby for a certain kind of person. Can only be used outdoors.</description>
+        <possessionCount>1</possessionCount>
+        <graphicData>
+            <texPath>Things/Building/Joy/Telescope</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawRotated>false</drawRotated>
+            <shadowData>
+                <volume>(0.3, 0.7, 0.3)</volume>
+                <offset>(-0.03,0,-0.35)</offset>
+            </shadowData>
+        </graphicData>
+        <canBeUsedUnderRoof>false</canBeUsedUnderRoof>
+        <fillPercent>0.15</fillPercent>
+        <altitudeLayer>Building</altitudeLayer>
+        <hasInteractionCell>true</hasInteractionCell>
+        <interactionCellOffset>(0,0,1)</interactionCellOffset>
+        <passability>PassThroughOnly</passability>
+        <pathCost>30</pathCost>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <socialPropernessMatters>true</socialPropernessMatters>
+        <thingCategories>
+            <li>BuildingsJoy</li>
+        </thingCategories>
+        <thingSetMakerTags>
+            <li>RewardStandardQualitySuper</li>
+        </thingSetMakerTags>
+        <building>
+            <joyKind>Telescope</joyKind>
+        </building>
+        <costList>
+            <Steel>50</Steel>
+            <ComponentIndustrial>1</ComponentIndustrial>
+        </costList>
+        <statBases>
+            <MaxHitPoints>75</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <MarketValue>50</MarketValue>
+            <Mass>7.5</Mass>
+            <JoyGainFactor>1.2</JoyGainFactor>
+        </statBases>
+        <placeWorkers>
+            <li>PlaceWorker_NotUnderRoof</li>
+            <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+        </placeWorkers>
+        <constructEffect>ConstructMetal</constructEffect>
+        <designationCategory>Joy</designationCategory>
+        <researchPrerequisites>
+            <li>NachoToastium_LensSmithing</li>
+        </researchPrerequisites>
+        <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+        <uiIconScale>0.9</uiIconScale>
+  </ThingDef>
+
+</Defs>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- Make hi-tech research benches affected by the nano-analyzer. -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="HiTechResearchBench"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
+        <value>
+            <li>NachoToastium_NanoAnalyzer</li>
+        </value>
+    </Operation>
+    
+</Patch>

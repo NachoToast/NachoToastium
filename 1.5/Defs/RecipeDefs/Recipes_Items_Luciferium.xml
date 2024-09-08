@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <RecipeDef Name="NachoToastium_LuciferiumFabricationBase" Abstract="True">
+        <jobString>Fabricating luciferium.</jobString>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_CookMeal</soundWorking>
+        <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+        <workSkill>Intellectual</workSkill>
+        <researchPrerequisites>
+            <li>NachoToastium_LuciferiumFabrication</li>
+        </researchPrerequisites>
+        <recipeUsers>
+            <li>DrugLab</li>
+        </recipeUsers>
+        <skillRequirements>
+            <Crafting>8</Crafting>
+        </skillRequirements>
+    </RecipeDef>
+
+    <RecipeDef ParentName="NachoToastium_LuciferiumFabricationBase">
+        <defName>NachoToastium_MakeLuciferium</defName>
+        <label>make luciferium</label>
+        <description>Make luciferium.</description>
+        <workAmount>700</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Uranium</li>
+                    </thingDefs>
+                </filter>
+                <count>9</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>MedicineUltratech</li>
+                    </thingDefs>
+                </filter>
+                <count>3</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Neutroamine</li>
+                    </thingDefs>
+                </filter>
+                <count>3</count>
+            </li>
+        </ingredients>
+        <products>
+            <Luciferium>1</Luciferium>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="NachoToastium_LuciferiumFabricationBase">
+        <defName>NachoToastium_MakeLuciferiumBulk</defName>
+        <label>make luciferium x4</label>
+        <description>Make luciferium x4.</description>
+        <workAmount>2800</workAmount>
+        <targetCountAdjustment>4</targetCountAdjustment>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Uranium</li>
+                    </thingDefs>
+                </filter>
+                <count>36</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>MedicineUltratech</li>
+                    </thingDefs>
+                </filter>
+                <count>12</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Neutroamine</li>
+                    </thingDefs>
+                </filter>
+                <count>12</count>
+            </li>
+        </ingredients>
+        <products>
+            <Luciferium>4</Luciferium>
+        </products>
+    </RecipeDef>
+
+</Defs>

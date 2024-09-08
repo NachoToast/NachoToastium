@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ThingDef ParentName="BenchBase">
+        <defName>NachoToastium_DeepDrill</defName>
+        <label>advanced deep drill</label>
+        <description>An advanced deep-crust drilling rig for extracting specific minerals from the planet's upper lithosphere. Can be repositioned freely.</description>
+        <thingClass>Building_WorkTable</thingClass>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Things/Building/Production/AdvancedDeepDrill</texPath>
+            <drawSize>(2,2)</drawSize>
+            <drawRotated>false</drawRotated>
+            <shadowData>
+                <volume>(0.52, 0.53, 0.09)</volume>
+                <offset>(0,0,-0.43)</offset>
+            </shadowData>
+        </graphicData>
+        <costList>
+            <Steel>150</Steel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+            <ComponentSpacer>3</ComponentSpacer>
+        </costList>
+        <altitudeLayer>Building</altitudeLayer>
+        <fillPercent>0.5</fillPercent>
+        <useHitPoints>True</useHitPoints>
+        <statBases>
+            <MaxHitPoints>300</MaxHitPoints>
+            <WorkToBuild>15000</WorkToBuild>
+            <Flammability>0.5</Flammability>
+            <Beauty>-25</Beauty>
+            <Mass>55</Mass>
+        </statBases>
+        <minifiedDef />
+        <thingCategories Inherit="false" />
+        <size>(1,1)</size>
+        <designationCategory>Production</designationCategory>
+        <passability>PassThroughOnly</passability>
+        <pathCost>50</pathCost>
+        <hasInteractionCell>true</hasInteractionCell>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <surfaceType>Item</surfaceType>
+        <inspectorTabs>
+            <li>ITab_Bills</li>
+        </inspectorTabs>
+        <building>
+            <uninstallWork>3600</uninstallWork>
+            <buildingTags>
+                <li>Production</li>
+            </buildingTags>
+            <destroySound>BuildingDestroyed_Metal_Small</destroySound>
+            <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+        </building>
+        <comps>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>700</basePowerConsumption>
+            </li>
+        </comps>
+        <placeWorkers>
+            <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+        </placeWorkers>
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+        <uiIconOffset>(0, 0.03)</uiIconOffset>
+        <uiIconScale>0.85</uiIconScale>
+        <researchPrerequisites>
+            <li>NachoToastium_LithosphericExtraction</li>
+        </researchPrerequisites>
+    </ThingDef>
+
+</Defs>

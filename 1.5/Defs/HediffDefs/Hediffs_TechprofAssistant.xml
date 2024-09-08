@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <HediffDef ParentName="ImplantHediffBase">
+        <defName>NachoToastium_TechprofAssistant</defName>
+        <label>techprof assistant</label>
+        <labelNoun>a techprof assistant</labelNoun>
+        <description>An installed techprof assistant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>NachoToastium_TechprofAssistant</ThingDef>
+        </descriptionHyperlinks>
+        <stages>
+            <li>
+                <statOffsets>
+                    <GlobalLearningFactor>1.00</GlobalLearningFactor>
+                </statOffsets>
+            </li>
+        </stages>
+        <spawnThingOnRemoved>NachoToastium_TechprofAssistant</spawnThingOnRemoved>
+    </HediffDef>
+
+    <ThingDef ParentName="BodyPartArchotechBase">
+        <defName>NachoToastium_TechprofAssistant</defName>
+        <label>techprof assistant</label>
+        <description>An modified techprof subpersona core, designed to be installed into the brain to accelerate the natural learning process.</description>
+        <descriptionHyperlinks>
+            <RecipeDef>NachoToastium_InstallTechprofAssistant</RecipeDef>
+        </descriptionHyperlinks>
+        <statBases>
+            <WorkToMake>18000</WorkToMake>
+            <MarketValue>2800</MarketValue>
+        </statBases>
+        <costList>
+            <TechprofSubpersonaCore>1</TechprofSubpersonaCore>
+            <MedicineUltratech>1</MedicineUltratech>
+            <Hyperweave>8</Hyperweave>
+        </costList>
+        <recipeMaker>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Machining</soundWorking>
+            <recipeUsers Inherit="False">
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <skillRequirements>
+                <Crafting>12</Crafting>
+            </skillRequirements>
+            <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+            <researchPrerequisites>
+                <li>NachoToastium_TechprofAssistant</li>
+            </researchPrerequisites>
+        </recipeMaker>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallImplantBase">
+        <defName>NachoToastium_InstallTechprofAssistant</defName>
+        <label>install techprof assistant</label>
+        <description>Install a techprof assistant</description>
+        <descriptionHyperlinks>
+            <ThingDef>NachoToastium_TechprofAssistant</ThingDef>
+            <HediffDef>NachoToastium_TechprofAssistant</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Installing techprof assistant.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>NachoToastium_TechprofAssistant</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>NachoToastium_TechprofAssistant</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Brain</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>NachoToastium_TechprofAssistant</addsHediff>
+    </RecipeDef>
+
+    <RecipeDef ParentName="SurgeryRemoveImplantBase">
+        <defName>NachoToastium_RemoveTechprofAssistant</defName>
+        <label>remove techprof assistant</label>
+        <description>Remove techprof assistant.</description>
+        <descriptionHyperlinks>
+            <ThingDef>NachoToastium_TechprofAssistant</ThingDef>
+            <HediffDef>NachoToastium_TechprofAssistant</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Removing techprof assistant.</jobString>
+        <removesHediff>NachoToastium_TechprofAssistant</removesHediff>
+    </RecipeDef> 
+
+</Defs>

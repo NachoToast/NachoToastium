@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- Nerf sell price of psychic foil helmets since they're relatively cheap to make. -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Apparel_PsychicFoilHelmet"]/statBases</xpath>
+        <value>
+            <SellPriceFactor>0.25</SellPriceFactor>
+        </value>
+    </Operation>
+
+    <!-- And make them craftable. -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Apparel_PsychicFoilHelmet"]</xpath>
+        <value>
+            <costList>
+                <ComponentIndustrial>2</ComponentIndustrial>
+                <Steel>20</Steel>
+            </costList>
+            <recipeMaker>
+                <effectWorking>Smith</effectWorking>
+                <soundWorking>Recipe_Smith</soundWorking>
+                <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+                <workSkill>Crafting</workSkill>
+                <recipeUsers>
+                    <li>ElectricSmithy</li>
+                    <li>FueledSmithy</li>
+                    <li>TableMachining</li>
+                </recipeUsers>
+                <researchPrerequisites>
+                    <li>NachoToastium_Metallurgy</li>
+                </researchPrerequisites>
+            </recipeMaker>
+        </value>
+    </Operation>
+
+    <!-- Make them smeltable too, since they now have ingredients. -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="Apparel_PsychicFoilHelmet"]/smeltable</xpath>
+        <value>
+            <smeltable>true</smeltable>
+        </value>
+    </Operation>
+
+</Patch>

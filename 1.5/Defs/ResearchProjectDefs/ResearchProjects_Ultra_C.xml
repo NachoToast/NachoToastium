@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ResearchProjectDef Abstract="True" Name="NachoToastium_Base_Ultra_C">
+        <techLevel>Ultra</techLevel>
+        <tab>NachoToastium</tab>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+            <li>NachoToastium_NanoAnalyzer</li>
+        </requiredResearchFacilities>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="NachoToastium_Base_Ultra_C">
+        <defName>NachoToastium_LuciferiumFabrication</defName>
+        <label>luciferium fabrication</label>
+        <description>Fabricate luciferium from a combination of uranium, neutroamine, and glitterworld medicine.</description>
+        <baseCost>2000</baseCost>
+        <prerequisites>
+            <li>NachoToastium_NeutroamineSynthesis</li>
+            <li>NachoToastium_Nanoelectronics</li>
+        </prerequisites>
+        <researchViewX>3.00</researchViewX>
+        <researchViewY>1.00</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="NachoToastium_Base_Ultra_C">
+        <defName>NachoToastium_MachineLearning</defName>
+        <label>machine learning</label>
+        <description>Understand machine learning concepts, allowing you to create techprof subpersona cores using uraniun, gold, and advanced components.</description>
+        <baseCost>4000</baseCost>
+        <prerequisites>
+            <li>ShipComputerCore</li>
+            <li>NachoToastium_Nanoelectronics</li>
+        </prerequisites>
+        <researchViewX>3.00</researchViewX>
+        <researchViewY>2.00</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="NachoToastium_Base_Ultra_C">
+        <defName>NachoToastium_HyperweaveProduction</defName>
+        <label>hyperweave production</label>
+        <description>Tailor hyperweave using synthread and devilstrand.</description>
+        <baseCost>2000</baseCost>
+        <prerequisites>
+            <li>NachoToastium_SynthreadWeaving</li>
+            <li>NachoToastium_Nanoelectronics</li>
+        </prerequisites>
+        <researchViewX>3.00</researchViewX>
+        <researchViewY>3.50</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="NachoToastium_Base_Ultra_C">
+        <defName>NachoToastium_Electrocautery</defName>
+        <label>electrocautery</label>
+        <description>Unlock wound cauterization, destroy carcinoma cells, and engrave impossibly detailed patterns on skin.</description>
+        <baseCost>2000</baseCost>
+        <prerequisites>
+            <li>NachoToastium_Engraving</li>
+            <li MayRequire="Ludeon.RimWorld.Biotech">Biosculpting</li>
+            <li>NachoToastium_Nanoelectronics</li>
+        </prerequisites>
+        <researchViewX>3.00</researchViewX>
+        <researchViewY>5.00</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="NachoToastium_Base_Ultra_C">
+        <defName>NachoToastium_Neurosurgery</defName>
+        <label>neurosurgery</label>
+        <description>Preparations to install self-made spacer-tech implants and organs, involving complex wiring with the recipients brain.</description>
+        <baseCost>2000</baseCost>
+        <prerequisites>
+            <li>NachoToastium_Nanoelectronics</li>
+            <li>BrainWiring</li>
+        </prerequisites>
+        <researchViewX>4.00</researchViewX>
+        <researchViewY>3.50</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="NachoToastium_Base_Ultra_C">
+        <defName>NachoToastium_AdvancedFieldHand</defName>
+        <label>advanced field hand</label>
+        <description>Craft an upgraded version of the field hand.</description>
+        <baseCost>4000</baseCost>
+        <prerequisites>
+            <li>NachoToastium_Neurosurgery</li>
+            <li>SpecializedLimbs</li>
+        </prerequisites>
+        <researchViewX>5.00</researchViewX>
+        <researchViewY>4.00</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="NachoToastium_Base_Ultra_C">
+        <defName>NachoToastium_AdvancedDrillArm</defName>
+        <label>advanced drill arm</label>
+        <description>Craft an upgraded version of the drill arm.</description>
+        <baseCost>4000</baseCost>
+        <prerequisites>
+            <li>NachoToastium_Neurosurgery</li>
+            <li>SpecializedLimbs</li>
+        </prerequisites>
+        <researchViewX>5.00</researchViewX>
+        <researchViewY>4.50</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="NachoToastium_Base_Ultra_C">
+        <defName>NachoToastium_AdvancedGunlink</defName>
+        <label>advanced gun link</label>
+        <description>Craft an upgraded version of the gun link for increased shooting accuracy and cooldown reduction.</description>
+        <baseCost>4000</baseCost>
+        <prerequisites>
+            <li>NachoToastium_Neurosurgery</li>
+            <li>Gunlink</li>
+        </prerequisites>
+        <researchViewX>5.00</researchViewX>
+        <researchViewY>5.00</researchViewY>
+    </ResearchProjectDef>
+
+</Defs>

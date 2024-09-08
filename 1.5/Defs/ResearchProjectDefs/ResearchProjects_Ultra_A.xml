@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ResearchProjectDef Abstract="True" Name="NachoToastium_Base_Ultra_A">
+        <techLevel>Ultra</techLevel>
+        <tab>NachoToastium</tab>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+            <li>MultiAnalyzer</li>
+        </requiredResearchFacilities>
+        <prerequisites>
+            <li>Fabrication</li>
+        </prerequisites>
+    </ResearchProjectDef>
+
+</Defs>

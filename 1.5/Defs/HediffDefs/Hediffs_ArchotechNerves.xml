@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <HediffDef ParentName="ImplantHediffBase">
+        <defName>NachoToastium_ArchotechNerves</defName>
+        <label>archotech nerves</label>
+        <labelNoun>archotech nerves</labelNoun>
+        <description>Archotech nerves.</description>
+        <descriptionHyperlinks>
+            <ThingDef>NachoToastium_ArchotechNerves</ThingDef>
+        </descriptionHyperlinks>
+        <stages>
+            <li>
+                <painFactor>0</painFactor>
+                <capMods>
+                    <li>
+                        <capacity>Manipulation</capacity>
+                        <offset>0.1</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <MeleeHitChance>30</MeleeHitChance>
+                    <MeleeDodgeChance>30</MeleeDodgeChance>
+                    <PawnTrapSpringChance>-0.99</PawnTrapSpringChance>
+                </statOffsets>
+            </li>
+        </stages>
+        <spawnThingOnRemoved>NachoToastium_ArchotechNerves</spawnThingOnRemoved>
+    </HediffDef>
+
+    <ThingDef ParentName="BodyPartArchotechBase">
+        <defName>NachoToastium_ArchotechNerves</defName>
+        <label>archotech nerves</label>
+        <description>Archotech nerves, utilizing advanced circuitry and chemistry at their synapses, they massively reduce reaction time and can selectively ignore nervous signals like pain.</description>
+        <descriptionHyperlinks>
+            <RecipeDef>NachoToastium_InstallArchotechNerves</RecipeDef>
+        </descriptionHyperlinks>
+        <costList>
+            <Plasteel>3</Plasteel>
+            <MedicineUltratech>3</MedicineUltratech>
+            <ComponentSpacer>6</ComponentSpacer>
+        </costList>
+        <statBases>
+            <WorkToMake>25000</WorkToMake>
+            <MarketValue>3800</MarketValue>
+            <Mass>0.05</Mass>
+        </statBases>
+        <recipeMaker>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Machining</soundWorking>
+            <recipeUsers Inherit="False">
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <skillRequirements>
+                <Crafting>12</Crafting>
+            </skillRequirements>
+            <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+            <researchPrerequisites>
+                <li>NachoToastium_ArchotechNerves</li>
+            </researchPrerequisites>
+        </recipeMaker>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallImplantBase">
+        <defName>NachoToastium_InstallArchotechNerves</defName>
+        <label>install archotech nerves</label>
+        <description>Install archotech nerves</description>
+        <descriptionHyperlinks>
+            <ThingDef>NachoToastium_ArchotechNerves</ThingDef>
+            <HediffDef>NachoToastium_ArchotechNerves</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Installing archotech nerves.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>NachoToastium_ArchotechNerves</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>NachoToastium_ArchotechNerves</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Spine</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>NachoToastium_ArchotechNerves</addsHediff>
+    </RecipeDef>
+
+</Defs>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <HediffDef ParentName="ImplantHediffBase">
+        <defName>NachoToastium_ArchotechSkin</defName>
+        <label>archotech skin</label>
+        <labelNoun>archotech skin</labelNoun>
+        <description>Grafted archotech skin.</description>
+        <descriptionHyperlinks>
+            <ThingDef>NachoToastium_ArchotechSkin</ThingDef>
+        </descriptionHyperlinks>
+        <stages>
+            <li>
+                <statOffsets>
+                    <PawnBeauty>3.0</PawnBeauty>
+                    <ComfyTemperatureMin>-30</ComfyTemperatureMin>
+                    <ComfyTemperatureMax>30</ComfyTemperatureMax>
+                    <IncomingDamageFactor>-0.99</IncomingDamageFactor>
+                </statOffsets>
+            </li>
+        </stages>
+        <spawnThingOnRemoved>NachoToastium_ArchotechSkin</spawnThingOnRemoved>
+    </HediffDef>
+
+    <ThingDef ParentName="BodyPartArchotechBase">
+        <defName>NachoToastium_ArchotechSkin</defName>
+        <label>archotech skin</label>
+        <description>A archotech skin, contains an AI to assist the user in day-to-day activities, drastically increasing cognitive abilities and removing the need for sleep entirely.</description>
+        <descriptionHyperlinks>
+            <RecipeDef>NachoToastium_InstallArchotechSkin</RecipeDef>
+        </descriptionHyperlinks>
+        <costList>
+            <Hyperweave>15</Hyperweave>
+            <MedicineUltratech>1</MedicineUltratech>
+            <AIPersonaCore>1</AIPersonaCore>
+        </costList>
+        <statBases>
+            <WorkToMake>25000</WorkToMake>
+            <MarketValue>3800</MarketValue>
+            <Mass>3.60</Mass>
+        </statBases>
+        <recipeMaker>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Machining</soundWorking>
+            <recipeUsers Inherit="False">
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <skillRequirements>
+                <Crafting>12</Crafting>
+            </skillRequirements>
+            <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+            <researchPrerequisites>
+                <li>NachoToastium_ArchotechSkin</li>
+            </researchPrerequisites>
+        </recipeMaker>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallImplantBase">
+        <defName>NachoToastium_InstallArchotechSkin</defName>
+        <label>install archotech skin</label>
+        <description>Install archotech skin</description>
+        <descriptionHyperlinks>
+            <ThingDef>NachoToastium_ArchotechSkin</ThingDef>
+            <HediffDef>NachoToastium_ArchotechSkin</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Installing archotech skin.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>NachoToastium_ArchotechSkin</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>NachoToastium_ArchotechSkin</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Torso</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>NachoToastium_ArchotechSkin</addsHediff>
+    </RecipeDef>
+
+</Defs>

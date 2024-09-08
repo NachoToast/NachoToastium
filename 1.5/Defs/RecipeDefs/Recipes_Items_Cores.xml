@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <RecipeDef Name="NachoToastium_MakeCoreBase" Abstract="True">
+        <unfinishedThingDef>NachoToastium_UnfinishedCore</unfinishedThingDef>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Uranium</li>
+                    </thingDefs>
+                </filter>
+                <count>30</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Gold</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+    </RecipeDef>
+
+    <RecipeDef ParentName="NachoToastium_MakeCoreBase">
+        <defName>NachoToastium_MakeTechprof</defName>
+        <label>make techprof subpersona core</label>
+        <description>Make a techprof subpersona core.</description>
+        <workAmount>15000</workAmount>
+        <jobString>Making techprof subpersona core.</jobString>
+        <researchPrerequisites>
+            <li>NachoToastium_MachineLearning</li>
+        </researchPrerequisites>
+        <recipeUsers>
+            <li>FabricationBench</li>
+        </recipeUsers>
+        <skillRequirements>
+            <Crafting>12</Crafting>
+            <Intellectual>8</Intellectual>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentSpacer</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+        </ingredients>
+        <products>
+            <TechprofSubpersonaCore>1</TechprofSubpersonaCore>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="NachoToastium_MakeCoreBase">
+        <defName>NachoToastium_MakePersona</defName>
+        <label>make AI persona core</label>
+        <description>Make an AI persona core.</description>
+        <workAmount>50000</workAmount>
+        <jobString>Making AI persona core.</jobString>
+        <researchPrerequisites>
+            <li>NachoToastium_ArtificialIntelligence</li>
+        </researchPrerequisites>
+        <recipeUsers>
+            <li>FabricationBench</li>
+        </recipeUsers>
+        <skillRequirements>
+            <Crafting>14</Crafting>
+            <Intellectual>12</Intellectual>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>TechprofSubpersonaCore</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <products>
+            <AIPersonaCore>1</AIPersonaCore>
+        </products>
+    </RecipeDef>
+
+</Defs>

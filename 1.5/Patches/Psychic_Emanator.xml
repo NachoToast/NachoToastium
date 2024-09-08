@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- Add designation category and prerequisites to building psychic emanators. -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="PsychicEmanator"]</xpath>
+        <value>
+            <designationCategory>Misc</designationCategory>
+            <researchPrerequisites>
+                <li>NachoToastium_PsychicStudy</li>
+            </researchPrerequisites>
+        </value>
+    </Operation>
+
+    <!-- And reduce their UI icon scale to make it look good (default is 0.85, a bit too big). -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="PsychicEmanator"]/uiIconScale</xpath>
+        <value>
+            <uiIconScale>0.65</uiIconScale>
+        </value>
+    </Operation>
+
+</Patch>

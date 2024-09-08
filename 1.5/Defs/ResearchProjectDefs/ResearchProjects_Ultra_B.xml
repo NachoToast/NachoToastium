@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ResearchProjectDef Abstract="True" Name="NachoToastium_Base_Ultra_B">
+        <techLevel>Ultra</techLevel>
+        <tab>NachoToastium</tab>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+            <li>MultiAnalyzer</li>
+        </requiredResearchFacilities>
+        <prerequisites>
+            <li>AdvancedFabrication</li>
+        </prerequisites>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="NachoToastium_Base_Ultra_B">
+        <defName>NachoToastium_AdvancedMedicine</defName>
+        <label>advanced medicine</label>
+        <description>Produce glitterworld medicine out of synthread, neutroamine, and industrial medicine.</description>
+        <baseCost>2000</baseCost>
+        <prerequisites>
+            <li>NachoToastium_NeutroamineSynthesis</li>
+            <li>NachoToastium_SynthreadWeaving</li>
+            <li MayRequire="Ludeon.RimWorld.Biotech">Bioregeneration</li>
+        </prerequisites>
+        <researchViewX>2.00</researchViewX>
+        <researchViewY>0.00</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="NachoToastium_Base_Ultra_B">
+        <defName>NachoToastium_Nanoelectronics</defName>
+        <label>nanoelectronics</label>
+        <description>Build nano-analyzers which further increase research speed and allow higher-level research projects.</description>
+        <baseCost>4000</baseCost>
+        <researchViewX>2.00</researchViewX>
+        <researchViewY>3.00</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="NachoToastium_Base_Ultra_B">
+        <defName>NachoToastium_ExplosivesManufacturing</defName>
+        <label>explosives manufacturing</label>
+        <description>Manufacture antigrain warheads using uranium, steel, and advanced components.</description>
+        <baseCost>2000</baseCost>
+        <prerequisites>
+            <li>Mortars</li>
+            <li>NachoToastium_Metallurgy</li>
+        </prerequisites>
+        <researchViewX>2.00</researchViewX>
+        <researchViewY>4.00</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="NachoToastium_Base_Ultra_B">
+        <defName>NachoToastium_LithosphericExtraction</defName>
+        <label>lithospheric extraction</label>
+        <description>Drill into the upper lithosphere of the earth to extract valuable minerals.</description>
+        <baseCost>2000</baseCost>
+        <prerequisites>
+            <li>NachoToastium_Excavation</li>
+            <li>GroundPenetratingScanner</li>
+        </prerequisites>
+        <researchViewX>2.00</researchViewX>
+        <researchViewY>6.00</researchViewY>
+    </ResearchProjectDef>
+
+</Defs>
