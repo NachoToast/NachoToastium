@@ -4,6 +4,7 @@
 	<author>NachoToast</author>
 	<supportedVersions>
 		<li>1.4</li>
+		<li>1.5</li>
 	</supportedVersions>
 	<packageId>NachoToast.NachoToastium</packageId>
 	<url>https://github.com/NachoToast/NachoToastium</url>
