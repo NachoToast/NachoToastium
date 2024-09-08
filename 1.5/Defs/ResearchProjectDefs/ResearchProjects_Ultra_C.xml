@@ -56,7 +56,7 @@
         <baseCost>2000</baseCost>
         <prerequisites>
             <li>NachoToastium_Engraving</li>
-            <li MayRequire="Ludeon.RimWorld.Biotech">Biosculpting</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Biosculpting</li>
             <li>NachoToastium_Nanoelectronics</li>
         </prerequisites>
         <researchViewX>3.00</researchViewX>

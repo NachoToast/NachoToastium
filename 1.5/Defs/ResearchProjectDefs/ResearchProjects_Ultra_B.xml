@@ -21,7 +21,7 @@
         <prerequisites>
             <li>NachoToastium_NeutroamineSynthesis</li>
             <li>NachoToastium_SynthreadWeaving</li>
-            <li MayRequire="Ludeon.RimWorld.Biotech">Bioregeneration</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Bioregeneration</li>
         </prerequisites>
         <researchViewX>2.00</researchViewX>
         <researchViewY>0.00</researchViewY>
