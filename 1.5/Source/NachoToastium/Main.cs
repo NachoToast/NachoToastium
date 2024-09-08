@@ -6,7 +6,7 @@ namespace NachoToastium
 {
     public class Recipe_BrandBase : RecipeWorker
     {
-        private static readonly List<HediffDef> brandedHediffsFamily = new List<HediffDef>
+        private static readonly List<HediffDef> BrandedHediffsFamily = new List<HediffDef>
         {
             HediffDefOf.NachoToastium_Branded,
             HediffDefOf.NachoToastium_Engraved,
@@ -15,13 +15,15 @@ namespace NachoToastium
 
         private static bool IsAlreadyBranded(HediffSet hediffSet)
         {
-            foreach (HediffDef hediffDef in brandedHediffsFamily)
+            foreach (HediffDef hediffDef in BrandedHediffsFamily)
             {
-                if (hediffSet.HasHediff(hediffDef)) return true;
+                if (hediffSet.HasHediff(hediffDef))
+                {
+                    return true;
+                }
             }
 
             return false;
-
         }
 
         public override IEnumerable<BodyPartRecord> GetPartsToApplyOn(Pawn pawn, RecipeDef recipe)
@@ -37,6 +39,7 @@ namespace NachoToastium
         public override void ApplyOnPawn(Pawn pawn, BodyPartRecord part, Pawn billDoer, List<Thing> ingredients, Bill bill)
         {
             pawn.health.AddHediff(recipe.addsHediff, part);
+
             pawn.needs.mood.thoughts.memories.TryGainMemory(ThoughtDefOf.NachoToastium_Branded, billDoer);
         }
     }
