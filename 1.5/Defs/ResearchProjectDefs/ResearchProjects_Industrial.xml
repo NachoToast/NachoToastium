@@ -77,11 +77,23 @@
     </ResearchProjectDef>
 
     <ResearchProjectDef ParentName="NachoToastium_Base_Industrial">
+        <defName>NachoToastium_SteelExtraction</defName>
+        <label>Steel extraction</label>
+        <description>Extract kilograms of steel from rock chunks.</description>
+        <baseCost>500</baseCost>
+        <researchViewX>0.00</researchViewX>
+        <researchViewY>6.00</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="NachoToastium_Base_Industrial">
         <defName>NachoToastium_Terraforming</defName>
         <label>Terraforming</label>
         <description>Terraform various soils into shallow water.</description>
         <baseCost>500</baseCost>
-        <researchViewX>0.00</researchViewX>
+        <prerequisites>
+            <li>NachoToastium_SteelExtraction</li>
+        </prerequisites>
+        <researchViewX>1.00</researchViewX>
         <researchViewY>6.00</researchViewY>
     </ResearchProjectDef>
 

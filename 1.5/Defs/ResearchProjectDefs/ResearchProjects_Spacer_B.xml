@@ -34,7 +34,7 @@
             <li>NachoToastium_Terraforming</li>
             <li>DeepDrilling</li>
         </prerequisites>
-        <researchViewX>1.00</researchViewX>
+        <researchViewX>2.00</researchViewX>
         <researchViewY>6.00</researchViewY>
     </ResearchProjectDef>
 

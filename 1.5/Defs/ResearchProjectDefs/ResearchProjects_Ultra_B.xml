@@ -58,7 +58,7 @@
             <li>NachoToastium_Excavation</li>
             <li>GroundPenetratingScanner</li>
         </prerequisites>
-        <researchViewX>2.00</researchViewX>
+        <researchViewX>3.00</researchViewX>
         <researchViewY>6.00</researchViewY>
     </ResearchProjectDef>
 
