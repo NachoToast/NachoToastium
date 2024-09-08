@@ -4,6 +4,8 @@
     <ResearchTabDef>
         <defName>NachoToastium</defName>
         <label>NachoToastium</label>
+        <generalTitle>NachoToastium research projects</generalTitle>
+        <generalDescription>Advanced, usually late-game research projects to accomplish what would normally be impossible.</generalDescription>
     </ResearchTabDef>
 
 </Defs>
