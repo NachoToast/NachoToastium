@@ -65,9 +65,6 @@
             <li>
                 <vomitMtbDays>4</vomitMtbDays>
                 <makeImmuneTo>
-                    <li>Malaria</li>
-                    <li>SleepingSickness</li>
-                    <li>Plague</li>
                     <li>WoundInfection</li>
                 </makeImmuneTo>
             </li>
