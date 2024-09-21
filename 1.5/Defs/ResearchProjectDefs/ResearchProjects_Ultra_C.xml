@@ -8,6 +8,9 @@
         <requiredResearchFacilities>
             <li>NachoToastium_NanoAnalyzer</li>
         </requiredResearchFacilities>
+        <prerequisites>
+            <li>NachoToastium_Nanoelectronics</li>
+        </prerequisites>
     </ResearchProjectDef>
 
     <ResearchProjectDef ParentName="NachoToastium_Base_Ultra_C">
