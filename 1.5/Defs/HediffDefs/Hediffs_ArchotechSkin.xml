@@ -25,7 +25,7 @@
     <ThingDef ParentName="BodyPartArchotechBase">
         <defName>NachoToastium_ArchotechSkin</defName>
         <label>archotech skin</label>
-        <description>A archotech skin, contains an AI to assist the user in day-to-day activities, drastically increasing cognitive abilities and removing the need for sleep entirely.</description>
+        <description>A graft of archotech skin, contains an AI to assist the user in day-to-day activities, drastically increasing cognitive abilities and removing the need for sleep entirely.</description>
         <descriptionHyperlinks>
             <RecipeDef>NachoToastium_InstallArchotechSkin</RecipeDef>
         </descriptionHyperlinks>

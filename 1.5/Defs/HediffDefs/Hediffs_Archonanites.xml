@@ -21,7 +21,7 @@
     <ThingDef ParentName="BodyPartArchotechBase">
         <defName>NachoToastium_Archonanites</defName>
         <label>archonanites</label>
-        <description>A swarm of archotech nanites, once injected into the bloodstream they continuously assist bodily functions. This results in a rapid increase in healing and coagulation rate.\nArchonanites cannot be removed from the bloodstream once injected.</description>
+        <description>A swarm of archotech nanites, once injected into the bloodstream they continuously assist bodily functions. This results in a rapid increase in healing and coagulation rate. Cannot be removed from the bloodstream once injected.</description>
         <descriptionHyperlinks>
             <RecipeDef>NachoToastium_InstallArchonanites</RecipeDef>
         </descriptionHyperlinks>
