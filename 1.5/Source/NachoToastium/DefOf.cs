@@ -10,6 +10,9 @@ namespace NachoToastium
         public static HediffDef NachoToastium_Engraved;
         public static HediffDef NachoToastium_EngravedElectric;
 
+        public static HediffDef NachoToastium_BehaviouralChipA;
+        public static HediffDef NachoToastium_BehaviouralChipB;
+
         static HediffDefOf()
         {
             DefOfHelper.EnsureInitializedInCtor(typeof(HediffDefOf));

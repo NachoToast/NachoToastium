@@ -27,6 +27,18 @@
     </ResearchProjectDef>
 
     <ResearchProjectDef ParentName="NachoToastium_Base_Ultra_C">
+        <defName>NachoToastium_BehaviouralChipB</defName>
+        <label>Chip optimization</label>
+        <description>Create better behavioural chips with less side effects.</description>
+        <baseCost>1000</baseCost>
+        <prerequisites>
+            <li>NachoToastium_BehaviouralChipA</li>
+        </prerequisites>
+        <researchViewX>3.00</researchViewX>
+        <researchViewY>2.00</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="NachoToastium_Base_Ultra_C">
         <defName>NachoToastium_MachineLearning</defName>
         <label>machine learning</label>
         <description>Understand machine learning concepts, allowing you to create techprof subpersona cores using uraniun, gold, and advanced components.</description>
@@ -35,7 +47,7 @@
             <li>ShipComputerCore</li>
             <li>NachoToastium_Nanoelectronics</li>
         </prerequisites>
-        <researchViewX>3.00</researchViewX>
+        <researchViewX>4.00</researchViewX>
         <researchViewY>2.00</researchViewY>
     </ResearchProjectDef>
 
