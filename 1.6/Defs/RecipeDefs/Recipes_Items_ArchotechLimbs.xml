@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <RecipeDef Name="NachoToastium_BodyPartArchotechBase" Abstract="True">
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <workAmount>39000</workAmount>
+        <workSkill>Crafting</workSkill>
+        <effectWorking>Smith</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
+        <skillRequirements>
+            <Crafting>12</Crafting>
+        </skillRequirements>
+        <recipeUsers>
+            <li>FabricationBench</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ComponentSpacer</li>
+                    </thingDefs>
+                </filter>
+                <count>4</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>15</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>MedicineUltratech</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <researchPrerequisites>
+            <li>NachoToastium_ArchotechLimbs</li>
+        </researchPrerequisites>
+    </RecipeDef>
+
+    <RecipeDef ParentName="NachoToastium_BodyPartArchotechBase">
+        <defName>NachoToastium_MakeArchotechEye</defName>
+        <label>make archotech eye</label>
+        <description>Make an archotech eye</description>
+        <jobString>Making archotech eye</jobString>
+        <products>
+            <ArchotechEye>1</ArchotechEye>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="NachoToastium_BodyPartArchotechBase">
+        <defName>NachoToastium_MakeArchotechArm</defName>
+        <label>make archotech arm</label>
+        <description>Make an archotech arm</description>
+        <jobString>Making archotech arm</jobString>
+        <products>
+            <ArchotechArm>1</ArchotechArm>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="NachoToastium_BodyPartArchotechBase">
+        <defName>NachoToastium_MakeArchotechLeg</defName>
+        <label>make archotech leg</label>
+        <description>Make an archotech leg</description>
+        <jobString>Making archotech leg</jobString>
+        <products>
+            <ArchotechLeg>1</ArchotechLeg>
+        </products>
+    </RecipeDef>
+
+</Defs>

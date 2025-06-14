@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <RecipeDef>
+        <defName>NachoToastium_MakeSynthread</defName>
+        <label>make synthread</label>
+        <jobString>Weaving synthread.</jobString>
+        <description>Interweave plasteel and cloth to create synthread.</description>
+        <workAmount>900</workAmount>
+        <effectWorking>Tailor</effectWorking>
+        <soundWorking>Recipe_Tailor</soundWorking>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <researchPrerequisites>
+            <li>NachoToastium_SynthreadWeaving</li>
+        </researchPrerequisites>
+        <recipeUsers>
+            <li>ElectricTailoringBench</li>
+        </recipeUsers>
+        <skillRequirements>
+            <Crafting>8</Crafting>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Cloth</li>
+                    </thingDefs>
+                </filter>
+                <count>50</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>50</count>
+            </li>
+        </ingredients>
+        <products>
+            <Synthread>50</Synthread>
+        </products>
+        <displayPriority>1</displayPriority>
+    </RecipeDef>
+
+</Defs>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ResearchProjectDef Abstract="True" Name="NachoToastium_Base_Spacer_B">
+        <techLevel>Spacer</techLevel>
+        <tab>NachoToastium</tab>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+            <li>MultiAnalyzer</li>
+        </requiredResearchFacilities>
+        <prerequisites>
+            <li>MultiAnalyzer</li>
+        </prerequisites>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="NachoToastium_Base_Spacer_B">
+        <defName>NachoToastium_AdvancedMoisturePump</defName>
+        <label>advanced moisture pump</label>
+        <description>Construct improved moisture pumps, which work much faster and dry out a much larger area.</description>
+        <baseCost>1500</baseCost>
+        <prerequisites>
+            <li>MoisturePump</li>
+        </prerequisites>
+        <researchViewX>1.00</researchViewX>
+        <researchViewY>2.00</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="NachoToastium_Base_Spacer_B">
+        <defName>NachoToastium_Excavation</defName>
+        <label>excavation</label>
+        <description>Excavate terrain into deep uncrossable moats.</description>
+        <baseCost>1500</baseCost>
+        <prerequisites>
+            <li>NachoToastium_Terraforming</li>
+            <li>DeepDrilling</li>
+        </prerequisites>
+        <researchViewX>2.00</researchViewX>
+        <researchViewY>6.00</researchViewY>
+    </ResearchProjectDef>
+
+</Defs>

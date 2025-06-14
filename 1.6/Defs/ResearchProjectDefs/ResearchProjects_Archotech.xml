@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ResearchProjectDef Abstract="True" Name="NachoToastium_Base_Archotech">
+        <techLevel>Archotech</techLevel>
+        <tab>NachoToastium</tab>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+            <li>NachoToastium_NanoAnalyzer</li>
+        </requiredResearchFacilities>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="NachoToastium_Base_Archotech">
+        <defName>NachoToastium_Archotechnology</defName>
+        <label>archotechnology</label>
+        <description>Understand the fundamental inner workings of archotech artifacts.</description>
+        <baseCost>10000</baseCost>
+        <prerequisites>
+            <li>NachoToastium_Nanoelectronics</li>
+            <li MayRequire="Ludeon.RimWorld.Biotech">Archogenetics</li>
+        </prerequisites>
+        <researchViewX>5.00</researchViewX>
+        <researchViewY>3.00</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="NachoToastium_Base_Archotech">
+        <defName>NachoToastium_SerumEngineering</defName>
+        <label>serum engineering</label>
+        <description>Engineer healer, resurrector, and skilltrainer mech serums.</description>
+        <baseCost>6000</baseCost>
+        <prerequisites>
+            <li>NachoToastium_Archotechnology</li>
+            <li>NachoToastium_AdvancedMedicine</li>
+            <li>NachoToastium_LuciferiumFabrication</li>
+        </prerequisites>
+        <researchViewX>6.00</researchViewX>
+        <researchViewY>0.00</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="NachoToastium_Base_Archotech">
+        <defName>NachoToastium_ArtificialIntelligence</defName>
+        <label>artificial intelligence</label>
+        <description>Simulate true artificial intelligence.</description>
+        <baseCost>6000</baseCost>
+        <prerequisites>
+            <li>NachoToastium_Archotechnology</li>
+        </prerequisites>
+        <researchViewX>6.00</researchViewX>
+        <researchViewY>1.00</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="NachoToastium_Base_Archotech">
+        <defName>NachoToastium_PsychicStudy</defName>
+        <label>psychic study</label>
+        <description>Create psychic emanators.</description>
+        <baseCost>2000</baseCost>
+        <prerequisites>
+            <li>NachoToastium_Archotechnology</li>
+        </prerequisites>
+        <researchViewX>6.00</researchViewX>
+        <researchViewY>2.00</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="NachoToastium_Base_Archotech">
+        <defName>NachoToastium_Archosurgery</defName>
+        <label>archosurgery</label>
+        <description>Preparations to install self-made archotech implants and organs, involving complex interfacing with the recipient's brain and nervous systems.</description>
+        <baseCost>4000</baseCost>
+        <prerequisites>
+            <li>NachoToastium_Archotechnology</li>
+            <li MayRequire="Ludeon.RimWorld.Royalty">NachoToastium_Neurosurgery</li>
+        </prerequisites>
+        <researchViewX>6.00</researchViewX>
+        <researchViewY>3.50</researchViewY>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="NachoToastium_Base_Archotech">
+        <defName>NachoToastium_ArchotechLimbs</defName>
+        <label>archotech limbs</label>
+        <description>Create archotech legs, arms, and eyes.</description>
+        <baseCost>6000</baseCost>
+        <prerequisites>
+            <li>NachoToastium_Archosurgery</li>
+            <li>Bionics</li>
+        </prerequisites>
+        <researchViewX>7.00</researchViewX>
+        <researchViewY>5.50</researchViewY>
+    </ResearchProjectDef>
+
+</Defs>

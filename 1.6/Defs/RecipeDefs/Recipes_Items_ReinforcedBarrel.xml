@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <RecipeDef>
+        <defName>NachoToastium_SteelCompression</defName>
+        <label>make reinforced barrel</label>
+        <description>Make a reinforced barrel by compressing steel into a tube shape.</description>
+        <jobString>Making reinforced barrel.</jobString>
+        <effectWorking>Smith</effectWorking>
+        <soundWorking>Recipe_Smith</soundWorking>
+        <workAmount>2600</workAmount>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>60</count>
+            </li>
+        </ingredients>
+        <products>
+            <ReinforcedBarrel>1</ReinforcedBarrel>
+        </products>
+        <researchPrerequisites>
+            <li>NachoToastium_SteelCompression</li>
+        </researchPrerequisites>
+        <recipeUsers>
+            <li>ElectricSmithy</li>
+            <li>FueledSmithy</li>
+            <li>TableMachining</li>
+        </recipeUsers>
+        <unfinishedThingDef>NachoToastium_UnfinishedReinforcedBarrel</unfinishedThingDef>
+    </RecipeDef>
+
+</Defs>

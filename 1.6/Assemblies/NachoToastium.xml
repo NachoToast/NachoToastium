@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NachoToastium</name>
+    </assembly>
+    <members>
+        <member name="M:NachoToastium.Patches.CanParticipateInX_Postfix(System.Boolean@,Verse.Pawn)">
+            <summary>
+            Accounts for behavioural chips when slave rebelling or prison breaking.
+            </summary>
+        </member>
+        <member name="M:NachoToastium.Patches.SetGuestStatus_Postfix(RimWorld.Pawn_GuestTracker,Verse.Pawn,RimWorld.GuestStatus)">
+            <summary>
+            Accounts for behavioural chips when enslaving a pawn.
+            </summary>
+        </member>
+        <member name="M:NachoToastium.Patches.SuppressionIsHigh_Postfix(System.Boolean@,Verse.Pawn)">
+            <summary>
+            Slaves with a behavioural chip should be seen as having high suppression.
+            </summary>
+            <remarks>This silences the "Slave unsuppressed" alert.</remarks>
+        </member>
+    </members>
+</doc>

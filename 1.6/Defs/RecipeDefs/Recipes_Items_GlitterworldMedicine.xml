@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <RecipeDef Name="NachoToastium_AdvancedMedicineBase" Abstract="True">
+        <jobString>Making glitterworld medicine.</jobString>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_CookMeal</soundWorking>
+        <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+        <workSkill>Intellectual</workSkill>
+        <researchPrerequisites>
+            <li>NachoToastium_AdvancedMedicine</li>
+        </researchPrerequisites>
+        <recipeUsers>
+            <li>DrugLab</li>
+        </recipeUsers>
+        <skillRequirements>
+            <Crafting>8</Crafting>
+        </skillRequirements>
+    </RecipeDef>
+
+    <RecipeDef ParentName="NachoToastium_AdvancedMedicineBase">
+        <defName>NachoToastium_MakeGlitterworldMedicine</defName>
+        <label>make glitterworld medicine</label>
+        <description>Make glitterworld medicine.</description>
+        <workAmount>700</workAmount>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Synthread</li>
+                    </thingDefs>
+                </filter>
+                <count>3</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>MedicineIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>3</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Neutroamine</li>
+                    </thingDefs>
+                </filter>
+                <count>3</count>
+            </li>
+        </ingredients>
+        <products>
+            <MedicineUltratech>1</MedicineUltratech>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef ParentName="NachoToastium_AdvancedMedicineBase">
+        <defName>NachoToastium_MakeGlitterworldMedicineBulk</defName>
+        <label>make glitterworld medicine x4</label>
+        <description>Make glitterworld medicine x4.</description>
+        <workAmount>2800</workAmount>
+        <targetCountAdjustment>4</targetCountAdjustment>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Synthread</li>
+                    </thingDefs>
+                </filter>
+                <count>12</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>MedicineIndustrial</li>
+                    </thingDefs>
+                </filter>
+                <count>12</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Neutroamine</li>
+                    </thingDefs>
+                </filter>
+                <count>12</count>
+            </li>
+        </ingredients>
+        <products>
+            <MedicineUltratech>4</MedicineUltratech>
+        </products>
+    </RecipeDef>
+
+</Defs>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ThoughtDef>
+        <defName>NachoToastium_BehaviouralChipA</defName>
+        <workerClass>ThoughtWorker_Hediff</workerClass>
+        <hediff>NachoToastium_BehaviouralChipA</hediff>
+        <validWhileDespawned>true</validWhileDespawned>
+        <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+        <stages>
+            <li>
+                <label>behavioural chip</label>
+                <description>It feels like half my thoughts are being blocked entirely.</description>
+                <baseMoodEffect>-20</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+</Defs>

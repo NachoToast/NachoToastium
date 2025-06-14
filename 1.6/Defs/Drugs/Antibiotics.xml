@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ThingDef ParentName="MakeableDrugPillBase">
+        <defName>NachoToastium_Antibiotic</defName>
+        <label>antibiotic</label>
+        <description>Anti-bacterial drugs that prevent new infections from appearing, this specific strain does not help fight against existing infections.\nLasts up to 48 hours.</description>
+        <possessionCount>10</possessionCount>
+        <descriptionHyperlinks>
+            <HediffDef>NachoToastium_AntibioticHigh</HediffDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Things/Item/Drug/Penoxycyline</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <socialPropernessMatters>false</socialPropernessMatters>
+        <rotatable>false</rotatable>
+        <statBases>
+            <WorkToMake>400</WorkToMake>
+            <MarketValue>9</MarketValue>
+            <Mass>0.005</Mass>
+            <Flammability>0.7</Flammability>
+        </statBases>
+        <techLevel>Industrial</techLevel>
+        <ingestible>
+            <drugCategory>Medical</drugCategory>
+            <outcomeDoers>
+                <li Class="IngestionOutcomeDoer_GiveHediff">
+                    <hediffDef>NachoToastium_AntibioticHigh</hediffDef>
+                    <severity>1.0</severity>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+        <recipeMaker>
+            <researchPrerequisite>NachoToastium_Antibiotics</researchPrerequisite>
+            <recipeUsers>
+                <li>DrugLab</li>
+            </recipeUsers>
+        </recipeMaker>
+        <costList>
+            <MedicineHerbal>3</MedicineHerbal>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Drug">
+                <listOrder>50</listOrder>
+                <overdoseSeverityOffset>0.08~0.14</overdoseSeverityOffset>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <HediffDef>
+        <defName>NachoToastium_AntibioticHigh</defName>
+        <hediffClass>Hediff_High</hediffClass>
+        <label>antibiotics</label>
+        <description>Resistance to new infections and bacterial diseases, although upsets the digestive system as a side-effect.\nDoes not help combat existing infections or diseases.</description>
+        <defaultLabelColor>(0.60, 0.56, 0.78)</defaultLabelColor>
+        <scenarioCanAdd>true</scenarioCanAdd>
+        <maxSeverity>1.0</maxSeverity>
+        <isBad>false</isBad>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-1.00</severityPerDay>
+                <showHoursToRecover>true</showHoursToRecover>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <vomitMtbDays>4</vomitMtbDays>
+                <makeImmuneTo>
+                    <li>WoundInfection</li>
+                </makeImmuneTo>
+            </li>
+        </stages>
+    </HediffDef>
+
+</Defs>

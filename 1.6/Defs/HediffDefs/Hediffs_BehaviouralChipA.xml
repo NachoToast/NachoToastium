@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <HediffDef ParentName="ImplantHediffBase">
+        <defName>NachoToastium_BehaviouralChipA</defName>
+        <label>behavioural chip</label>
+        <labelNoun>behavioural chip</labelNoun>
+        <description>An implanted behavioural chip.</description>
+        <descriptionHyperlinks>
+            <ThingDef>NachoToastium_BehaviouralChipA</ThingDef>
+        </descriptionHyperlinks>
+        <stages>
+            <li>
+                <blocksMentalBreaks>true</blocksMentalBreaks>
+                <blocksInspirations>true</blocksInspirations>
+            </li>
+        </stages>
+        <spawnThingOnRemoved>NachoToastium_BehaviouralChipA</spawnThingOnRemoved>
+    </HediffDef>
+
+    <ThingDef ParentName="BodyPartBionicBase">
+        <defName>NachoToastium_BehaviouralChipA</defName>
+        <label>behavioural chip</label>
+        <description>A small, psyche-altering chip that prevents mental breaks, rebellions, and prison breaks when installed. This variant comes with the unfortunate side effect of preventing inspirations as well, and mind suppressing effects aren't usually well received.</description>
+        <descriptionHyperlinks>
+            <RecipeDef>NachoToastium_InstallBehaviouralChipA</RecipeDef>
+        </descriptionHyperlinks>
+        <costList>
+            <ComponentIndustrial>2</ComponentIndustrial>
+            <ComponentSpacer>4</ComponentSpacer>
+        </costList>
+        <statBases>
+            <WorkToMake>2600</WorkToMake>
+        </statBases>
+        <recipeMaker>
+            <recipeUsers Inherit="False">
+                <li>FabricationBench</li>
+            </recipeUsers>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+            <researchPrerequisites>
+                <li>NachoToastium_BehaviouralChipA</li>
+            </researchPrerequisites>
+        </recipeMaker>
+    </ThingDef>
+
+    <RecipeDef ParentName="SurgeryInstallImplantBase">
+        <defName>NachoToastium_InstallBehaviouralChipA</defName>
+        <label>install behavioural chip</label>
+        <description>Install behavioural chip</description>
+        <descriptionHyperlinks>
+            <ThingDef>NachoToastium_BehaviouralChipA</ThingDef>
+            <HediffDef>NachoToastium_BehaviouralChipA</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Installing behavioural chip.</jobString>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>NachoToastium_BehaviouralChipA</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>NachoToastium_BehaviouralChipA</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+            <li>Brain</li>
+        </appliedOnFixedBodyParts>
+        <addsHediff>NachoToastium_BehaviouralChipA</addsHediff>
+    </RecipeDef>
+
+    <RecipeDef ParentName="SurgeryRemoveImplantBase">
+        <defName>NachoToastium_RemoveBehaviouralChipA</defName>
+        <label>remove behavioural chip</label>
+        <description>Remove a behavioural chip.</description>
+        <descriptionHyperlinks>
+            <ThingDef>NachoToastium_BehaviouralChipA</ThingDef>
+            <HediffDef>NachoToastium_BehaviouralChipA</HediffDef>
+        </descriptionHyperlinks>
+        <jobString>Removing behavioural chip.</jobString>
+        <removesHediff>NachoToastium_BehaviouralChipA</removesHediff>
+    </RecipeDef>
+
+</Defs>
