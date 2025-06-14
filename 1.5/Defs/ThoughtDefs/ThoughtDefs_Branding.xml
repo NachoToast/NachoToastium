@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-    <ThoughtDef>
+    <ThoughtDef MayRequire="Ludeon.RimWorld.Royalty">
         <defName>NachoToastium_Branded</defName>
         <thoughtClass>Thought_MemorySocial</thoughtClass>
         <durationDays>90</durationDays>

@@ -28,37 +28,6 @@
     </RecipeDef>
 
     <RecipeDef ParentName="NachoToastium_MakeCoreBase">
-        <defName>NachoToastium_MakeTechprof</defName>
-        <label>make techprof subpersona core</label>
-        <description>Make a techprof subpersona core.</description>
-        <workAmount>15000</workAmount>
-        <jobString>Making techprof subpersona core.</jobString>
-        <researchPrerequisites>
-            <li>NachoToastium_MachineLearning</li>
-        </researchPrerequisites>
-        <recipeUsers>
-            <li>FabricationBench</li>
-        </recipeUsers>
-        <skillRequirements>
-            <Crafting>12</Crafting>
-            <Intellectual>8</Intellectual>
-        </skillRequirements>
-        <ingredients>
-            <li>
-                <filter>
-                    <thingDefs>
-                        <li>ComponentSpacer</li>
-                    </thingDefs>
-                </filter>
-                <count>5</count>
-            </li>
-        </ingredients>
-        <products>
-            <TechprofSubpersonaCore>1</TechprofSubpersonaCore>
-        </products>
-    </RecipeDef>
-
-    <RecipeDef ParentName="NachoToastium_MakeCoreBase">
         <defName>NachoToastium_MakePersona</defName>
         <label>make AI persona core</label>
         <description>Make an AI persona core.</description>
@@ -78,10 +47,10 @@
             <li>
                 <filter>
                     <thingDefs>
-                        <li>TechprofSubpersonaCore</li>
+                        <li>ComponentSpacer</li>
                     </thingDefs>
                 </filter>
-                <count>1</count>
+                <count>15</count>
             </li>
         </ingredients>
         <products>

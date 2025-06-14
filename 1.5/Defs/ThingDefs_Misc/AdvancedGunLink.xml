@@ -52,7 +52,7 @@
             <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Gunlink/Gunlink</wornGraphicPath>
             <renderSkipFlags>
                 <li>None</li>
-              </renderSkipFlags>
+            </renderSkipFlags>
             <countsAsClothingForNudity>false</countsAsClothingForNudity>
             <bodyPartGroups Inherit="False">
                 <li>UpperHead</li>
@@ -84,7 +84,7 @@
             </options>
         </colorGenerator>
         <comps>
-            <li Class="CompProperties_Biocodable"/>
+            <li Class="CompProperties_Biocodable" />
         </comps>
     </ThingDef>
 

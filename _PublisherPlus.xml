@@ -2,9 +2,10 @@
 <Configuration>
   <Excluded>
     <exclude>.git</exclude>
-    <exclude>1.5\Source</exclude>
-    <exclude>LICENSE</exclude>
+    <exclude>.vscode</exclude>
+    <exclude>Source</exclude>
+    <exclude>.editorconfig</exclude>
+    <exclude>.gitignore</exclude>
     <exclude>README.md</exclude>
-    <exclude>Tech Tree.drawio</exclude>
   </Excluded>
 </Configuration>

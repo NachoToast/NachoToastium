@@ -27,9 +27,11 @@
         </descriptionHyperlinks>
         <costList>
             <ComponentIndustrial>2</ComponentIndustrial>
-            <Gold>2</Gold>
             <ComponentSpacer>4</ComponentSpacer>
         </costList>
+        <statBases>
+            <WorkToMake>2600</WorkToMake>
+        </statBases>
         <recipeMaker>
             <recipeUsers Inherit="False">
                 <li>FabricationBench</li>
@@ -83,6 +85,6 @@
         </descriptionHyperlinks>
         <jobString>Removing behavioural chip.</jobString>
         <removesHediff>NachoToastium_BehaviouralChipA</removesHediff>
-    </RecipeDef> 
+    </RecipeDef>
 
 </Defs>

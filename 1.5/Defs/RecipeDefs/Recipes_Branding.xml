@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-    <RecipeDef Name="NachoToastium_BrandBase" Abstract="True">
+    <RecipeDef MayRequire="Ludeon.RimWorld.Royalty" Name="NachoToastium_BrandBase" Abstract="True">
         <workerClass>NachoToastium.Recipe_BrandBase</workerClass>
         <anesthetize>false</anesthetize>
         <hideBodyPartNames>true</hideBodyPartNames>
@@ -11,19 +11,19 @@
         <recipeUsers>
             <li>Human</li>
         </recipeUsers>
-		<ingredients>
-			<li>
-				<filter>
-					<thingDefs>
-						<li>Dye</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
-		</ingredients>
-		<skillRequirements>
-			<Artistic>2</Artistic>
-		</skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Dye</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <skillRequirements>
+            <Artistic>2</Artistic>
+        </skillRequirements>
     </RecipeDef>
 
     <RecipeDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="NachoToastium_BrandBase">
@@ -49,7 +49,7 @@
             </categories>
         </fixedIngredientFilter>
         <researchPrerequisites>
-            <li>NachoToastium_Branding</li>    
+            <li>NachoToastium_Branding</li>
         </researchPrerequisites>
     </RecipeDef>
 
@@ -79,7 +79,7 @@
             </categories>
         </fixedIngredientFilter>
         <researchPrerequisites>
-            <li>NachoToastium_Engraving</li>    
+            <li>NachoToastium_Engraving</li>
         </researchPrerequisites>
     </RecipeDef>
 
@@ -112,7 +112,7 @@
             </disallowedThingDefs>
         </fixedIngredientFilter>
         <researchPrerequisites>
-            <li>NachoToastium_Electrocautery</li>    
+            <li>NachoToastium_Electrocautery</li>
         </researchPrerequisites>
     </RecipeDef>
 

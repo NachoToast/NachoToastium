@@ -6,7 +6,9 @@
         <label>painkiller</label>
         <description>A drug for reducing pain and discomfort throughout the body. Effective for up to 24 hours.</description>
         <possessionCount>10</possessionCount>
-        <descriptionHyperlinks><HediffDef>NachoToastium_PainkillerHigh</HediffDef></descriptionHyperlinks>
+        <descriptionHyperlinks>
+            <HediffDef>NachoToastium_PainkillerHigh</HediffDef>
+        </descriptionHyperlinks>
         <graphicData>
             <texPath>Things/Item/Drug/Penoxycyline</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
@@ -66,6 +68,6 @@
                 <painFactor>0.3</painFactor>
             </li>
         </stages>
-  </HediffDef>
+    </HediffDef>
 
 </Defs>

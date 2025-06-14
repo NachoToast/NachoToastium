@@ -1,4 +1,4 @@
-﻿using HarmonyLib;
+using HarmonyLib;
 using RimWorld;
 using Verse;
 
@@ -34,6 +34,14 @@ namespace NachoToastium
                 postfix: new HarmonyMethod(
                     methodType: typeof(Patches),
                     methodName: nameof(SetGuestStatus_Postfix)));
+
+            harmony.Patch(
+                original: AccessTools.PropertyGetter(
+                    type: typeof(Need_Suppression),
+                    name: nameof(Need_Suppression.IsHigh)),
+                postfix: new HarmonyMethod(
+                    methodType: typeof(Patches),
+                    methodName: nameof(SuppressionIsHigh_Postfix)));
         }
 
         /// <summary>
@@ -57,7 +65,10 @@ namespace NachoToastium
         /// <summary>
         /// Accounts for behavioural chips when enslaving a pawn.
         /// </summary>
-        private static void SetGuestStatus_Postfix(Pawn_GuestTracker __instance, Pawn ___pawn, GuestStatus guestStatus)
+        private static void SetGuestStatus_Postfix(
+            Pawn_GuestTracker __instance,
+            Pawn ___pawn,
+            GuestStatus guestStatus)
         {
             if (guestStatus != GuestStatus.Slave)
             {
@@ -65,10 +76,30 @@ namespace NachoToastium
                 return;
             }
 
-            if (__instance.slaveInteractionMode == SlaveInteractionModeDefOf.Suppress && ___pawn.HasBehaviouralChip())
+            if (__instance.slaveInteractionMode == SlaveInteractionModeDefOf.Suppress &&
+                ___pawn.HasBehaviouralChip())
             {
-                // Set to suppression but isn't needed due to behavioural chip, so change back to no interaction.
+                // Set to suppression but isn't needed due to behavioural chip,
+                // so change back to no interaction.
                 __instance.slaveInteractionMode = SlaveInteractionModeDefOf.NoInteraction;
+            }
+        }
+
+        /// <summary>
+        /// Slaves with a behavioural chip should be seen as having high suppression.
+        /// </summary>
+        /// <remarks>This silences the "Slave unsuppressed" alert.</remarks>
+        private static void SuppressionIsHigh_Postfix(ref bool __result, Pawn ___pawn)
+        {
+            if (__result == false)
+            {
+                // Already seen as not needing suppression, no need to do anything more.
+                return;
+            }
+
+            if (___pawn.HasBehaviouralChip())
+            {
+                __result = false;
             }
         }
     }

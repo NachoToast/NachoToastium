@@ -60,6 +60,6 @@
         </researchPrerequisites>
         <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
         <uiIconScale>0.9</uiIconScale>
-  </ThingDef>
+    </ThingDef>
 
 </Defs>

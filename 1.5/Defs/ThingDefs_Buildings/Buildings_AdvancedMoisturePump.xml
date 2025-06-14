@@ -20,7 +20,7 @@
             </damageData>
         </graphicData>
         <comps>
-            <li Class="CompProperties_Forbiddable"/>
+            <li Class="CompProperties_Forbiddable" />
             <li Class="CompProperties_Power">
                 <compClass>CompPowerTrader</compClass>
                 <basePowerConsumption>300</basePowerConsumption>

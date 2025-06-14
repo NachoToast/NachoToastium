@@ -23,7 +23,7 @@
                         <li>ComponentSpacer</li>
                     </thingDefs>
                 </filter>
-                <count>5</count>
+                <count>2</count>
             </li>
             <li>
                 <filter>
@@ -39,7 +39,7 @@
                         <li>Uranium</li>
                     </thingDefs>
                 </filter>
-                <count>30</count>
+                <count>10</count>
             </li>
         </ingredients>
         <unfinishedThingDef>NachoToastium_UnfinishedMechSerum</unfinishedThingDef>

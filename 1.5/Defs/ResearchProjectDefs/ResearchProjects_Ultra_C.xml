@@ -39,19 +39,6 @@
     </ResearchProjectDef>
 
     <ResearchProjectDef ParentName="NachoToastium_Base_Ultra_C">
-        <defName>NachoToastium_MachineLearning</defName>
-        <label>machine learning</label>
-        <description>Understand machine learning concepts, allowing you to create techprof subpersona cores using uraniun, gold, and advanced components.</description>
-        <baseCost>4000</baseCost>
-        <prerequisites>
-            <li>ShipComputerCore</li>
-            <li>NachoToastium_Nanoelectronics</li>
-        </prerequisites>
-        <researchViewX>4.00</researchViewX>
-        <researchViewY>2.00</researchViewY>
-    </ResearchProjectDef>
-
-    <ResearchProjectDef ParentName="NachoToastium_Base_Ultra_C">
         <defName>NachoToastium_HyperweaveProduction</defName>
         <label>hyperweave production</label>
         <description>Tailor hyperweave using synthread and devilstrand.</description>
@@ -81,7 +68,7 @@
     <ResearchProjectDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="NachoToastium_Base_Ultra_C">
         <defName>NachoToastium_Neurosurgery</defName>
         <label>neurosurgery</label>
-        <description>Preparations to install self-made spacer-tech implants and organs, involving complex wiring with the recipients brain.</description>
+        <description>Preparations to install self-made spacer-tech implants and organs, involving complex wiring with the recipient's brain.</description>
         <baseCost>2000</baseCost>
         <prerequisites>
             <li>NachoToastium_Nanoelectronics</li>

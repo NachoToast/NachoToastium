@@ -1,4 +1,4 @@
-﻿using RimWorld;
+using RimWorld;
 using Verse;
 
 namespace NachoToastium
@@ -6,8 +6,13 @@ namespace NachoToastium
     [DefOf]
     public static class HediffDefOf
     {
+        [MayRequireRoyalty]
         public static HediffDef NachoToastium_Branded;
+
+        [MayRequireRoyalty]
         public static HediffDef NachoToastium_Engraved;
+
+        [MayRequireRoyalty]
         public static HediffDef NachoToastium_EngravedElectric;
 
         public static HediffDef NachoToastium_BehaviouralChipA;
@@ -22,6 +27,7 @@ namespace NachoToastium
     [DefOf]
     public static class ThoughtDefOf
     {
+        [MayRequireRoyalty]
         public static ThoughtDef NachoToastium_Branded;
 
         static ThoughtDefOf()

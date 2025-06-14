@@ -25,9 +25,12 @@
             <RecipeDef>NachoToastium_InstallBehaviouralChipB</RecipeDef>
         </descriptionHyperlinks>
         <costList>
-            <Gold>4</Gold>
+            <Gold>1</Gold>
             <ComponentSpacer>6</ComponentSpacer>
         </costList>
+        <statBases>
+            <WorkToMake>2600</WorkToMake>
+        </statBases>
         <recipeMaker>
             <recipeUsers Inherit="False">
                 <li>FabricationBench</li>
@@ -81,6 +84,6 @@
         </descriptionHyperlinks>
         <jobString>Removing behavioural chip.</jobString>
         <removesHediff>NachoToastium_BehaviouralChipB</removesHediff>
-    </RecipeDef> 
+    </RecipeDef>
 
 </Defs>

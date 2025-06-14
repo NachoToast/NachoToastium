@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-    <HediffDef>
+    <HediffDef MayRequire="Ludeon.RimWorld.Royalty">
         <defName>NachoToastium_Branded</defName>
         <label>branded</label>
         <labelNoun>the brand of the Empire</labelNoun>
@@ -33,7 +33,7 @@
         </comps>
     </HediffDef>
 
-    <HediffDef>
+    <HediffDef MayRequire="Ludeon.RimWorld.Royalty">
         <defName>NachoToastium_Engraved</defName>
         <label>engraved</label>
         <labelNoun>an engraving of the Empire's emblem</labelNoun>
@@ -65,7 +65,7 @@
         </comps>
     </HediffDef>
 
-    <HediffDef>
+    <HediffDef MayRequire="Ludeon.RimWorld.Royalty">
         <defName>NachoToastium_EngravedElectric</defName>
         <label>electrically engraved</label>
         <labelNoun>an electrical engraving of the Empire's emblem</labelNoun>

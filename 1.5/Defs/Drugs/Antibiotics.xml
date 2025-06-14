@@ -6,7 +6,9 @@
         <label>antibiotic</label>
         <description>Anti-bacterial drugs that prevent new infections from appearing, this specific strain does not help fight against existing infections.\nLasts up to 48 hours.</description>
         <possessionCount>10</possessionCount>
-        <descriptionHyperlinks><HediffDef>NachoToastium_AntibioticHigh</HediffDef></descriptionHyperlinks>
+        <descriptionHyperlinks>
+            <HediffDef>NachoToastium_AntibioticHigh</HediffDef>
+        </descriptionHyperlinks>
         <graphicData>
             <texPath>Things/Item/Drug/Penoxycyline</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
@@ -69,6 +71,6 @@
                 </makeImmuneTo>
             </li>
         </stages>
-  </HediffDef>
+    </HediffDef>
 
 </Defs>
