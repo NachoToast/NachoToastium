@@ -19,6 +19,7 @@
             <designatorDropdown>NachoToastium_TerraformShallow</designatorDropdown>
             <statBases>
                 <WorkToBuild>3000</WorkToBuild>
+                <MarketValue>0</MarketValue>
             </statBases>
             <researchPrerequisites>
                 <li>NachoToastium_Terraforming</li>
@@ -37,6 +38,7 @@
             <designatorDropdown>NachoToastium_TerraformDeep</designatorDropdown>
             <statBases>
                 <WorkToBuild>4000</WorkToBuild>
+                <MarketValue>0</MarketValue>
             </statBases>
             <researchPrerequisites>
                 <li>NachoToastium_Excavation</li>
